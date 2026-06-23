@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+*.secret
+
+# AWS credentials - never commit
+.aws/
+*credentials*.csv
+*accessKeys*.csv
+*AccessKeys*.csv
+
+# SSH private keys - never commit
+.ssh/
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+id_ed25519_github
+id_ed25519_github.pub
+
+# VS Code local settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

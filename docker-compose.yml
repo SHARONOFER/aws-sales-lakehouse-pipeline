@@ -1,0 +1,28 @@
+# רשימת השירותים / הקונטיינרים של הפרויקט
+services:
+
+  # שם השירות שלנו בתוך Docker Compose
+  sales-pipeline:
+
+    # אם אין Image מוכן, Docker Compose יבנה אותו לפי ההגדרות כאן
+    build:
+
+      # תיקיית הפרויקט הנוכחית היא מקור הקבצים לבנייה
+      context: .
+
+      # מיקום ה-Dockerfile שממנו בונים את ה-Image
+      dockerfile: docker/Dockerfile
+
+    # שם ה-Image שייבנה או ישמש להרצה
+    image: aws-sales-lakehouse-pipeline:local
+
+    # שם ברור לקונטיינר שייווצר בזמן ההרצה
+    container_name: aws-sales-lakehouse-pipeline
+
+    # חיבור תיקיית הפרויקט המקומית ב-Windows לתיקיית /app בתוך הקונטיינר
+    # כך קבצים שנוצרים בתוך הקונטיינר יופיעו גם אצלך בתיקיית הפרויקט
+    volumes:
+      - .:/app
+
+    # הפקודה שתרוץ כשהקונטיינר עולה
+    command: python scripts/generate_sample_data.py
