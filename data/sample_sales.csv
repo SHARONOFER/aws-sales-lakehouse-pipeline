@@ -1,6 +1,1001 @@
-order_id,customer_id,product_id,order_date,quantity,price,country
-1,101,501,2026-06-01,2,120,Israel
-2,102,502,2026-06-02,1,300,USA
-3,103,503,2026-06-03,5,40,Israel
-4,104,504,2026-06-04,3,75,Germany
-5,105,505,2026-06-05,4,55,France
+order_id,customer_id,customer_segment,product_id,product_name,category,order_date,quantity,unit_price,discount_percent,total_amount,country,sales_channel,payment_method
+1,1281,Private,502,Monitor,Electronics,2026-04-25,1,300,15,255.0,Germany,Online,Credit Card
+2,1095,Private,507,Headphones,Audio,2026-04-30,1,150,0,150.0,Israel,Store,Cash
+3,1284,Private,504,Mouse,Accessories,2026-03-23,8,40,10,288.0,Spain,Partner,Bank Transfer
+4,1104,Private,503,Keyboard,Accessories,2026-07-14,4,80,0,320.0,USA,Partner,Bank Transfer
+5,1470,Enterprise,505,Office Chair,Furniture,2026-03-05,1,250,15,212.5,Spain,Online,Bank Transfer
+6,1721,Private,506,Desk,Furniture,2026-01-24,10,450,0,4500.0,France,Partner,Credit Card
+7,1284,Small Business,504,Mouse,Accessories,2026-11-22,2,40,5,76.0,Netherlands,Store,Bank Transfer
+8,1273,Enterprise,506,Desk,Furniture,2026-12-16,4,450,15,1530.0,USA,Store,PayPal
+9,1276,Enterprise,503,Keyboard,Accessories,2026-12-19,8,80,5,608.0,France,Partner,Credit Card
+10,1410,Small Business,504,Mouse,Accessories,2026-02-03,1,40,0,40.0,France,Partner,PayPal
+11,1469,Private,508,Webcam,Accessories,2026-05-16,7,110,15,654.5,Germany,Store,Bank Transfer
+12,1370,Private,507,Headphones,Audio,2026-03-12,10,150,5,1425.0,Italy,Online,Credit Card
+13,1163,Enterprise,502,Monitor,Electronics,2026-08-05,3,300,15,765.0,USA,Marketplace,Cash
+14,1994,Enterprise,508,Webcam,Accessories,2026-01-06,9,110,0,990.0,USA,Partner,Bank Transfer
+15,1161,Small Business,502,Monitor,Electronics,2026-01-02,5,300,5,1425.0,United Kingdom,Store,Credit Card
+16,1203,Private,505,Office Chair,Furniture,2026-07-11,9,250,10,2025.0,Germany,Online,Bank Transfer
+17,1951,Small Business,508,Webcam,Accessories,2026-06-07,1,110,0,110.0,France,Online,PayPal
+18,1497,Private,502,Monitor,Electronics,2026-09-30,2,300,15,510.0,Germany,Store,Cash
+19,1893,Enterprise,503,Keyboard,Accessories,2026-08-05,5,80,10,360.0,France,Store,Bank Transfer
+20,1921,Enterprise,507,Headphones,Audio,2026-08-20,6,150,5,855.0,USA,Store,PayPal
+21,1602,Enterprise,502,Monitor,Electronics,2026-04-28,6,300,0,1800.0,France,Online,Credit Card
+22,1927,Private,501,Laptop,Electronics,2026-06-19,4,1200,0,4800.0,USA,Store,Bank Transfer
+23,1135,Enterprise,508,Webcam,Accessories,2026-10-20,4,110,10,396.0,Italy,Store,Cash
+24,1099,Enterprise,507,Headphones,Audio,2026-08-09,4,150,0,600.0,Netherlands,Marketplace,Cash
+25,1669,Enterprise,508,Webcam,Accessories,2026-02-20,1,110,15,93.5,Israel,Marketplace,Bank Transfer
+26,1194,Enterprise,502,Monitor,Electronics,2026-08-18,4,300,0,1200.0,Germany,Marketplace,PayPal
+27,1895,Private,505,Office Chair,Furniture,2026-08-15,8,250,0,2000.0,USA,Online,Credit Card
+28,1416,Small Business,502,Monitor,Electronics,2026-09-04,4,300,0,1200.0,France,Marketplace,Credit Card
+29,1399,Small Business,503,Keyboard,Accessories,2026-08-21,7,80,0,560.0,United Kingdom,Marketplace,Cash
+30,1222,Private,503,Keyboard,Accessories,2026-10-24,4,80,0,320.0,Israel,Partner,Credit Card
+31,1514,Enterprise,501,Laptop,Electronics,2026-03-22,10,1200,5,11400.0,Israel,Online,PayPal
+32,1691,Private,502,Monitor,Electronics,2026-07-26,10,300,0,3000.0,USA,Store,Credit Card
+33,1597,Enterprise,502,Monitor,Electronics,2026-09-25,7,300,15,1785.0,Netherlands,Partner,PayPal
+34,1405,Private,506,Desk,Furniture,2026-12-10,4,450,0,1800.0,United Kingdom,Marketplace,Bank Transfer
+35,1636,Enterprise,502,Monitor,Electronics,2026-02-21,1,300,5,285.0,USA,Store,Bank Transfer
+36,1900,Private,503,Keyboard,Accessories,2026-07-09,6,80,0,480.0,United Kingdom,Store,Cash
+37,1541,Private,505,Office Chair,Furniture,2026-12-08,10,250,15,2125.0,United Kingdom,Online,PayPal
+38,1760,Enterprise,505,Office Chair,Furniture,2026-03-21,2,250,0,500.0,United Kingdom,Partner,PayPal
+39,1649,Small Business,506,Desk,Furniture,2026-09-16,4,450,15,1530.0,Italy,Partner,Credit Card
+40,1045,Private,502,Monitor,Electronics,2026-06-20,7,300,0,2100.0,Germany,Partner,PayPal
+41,1437,Enterprise,508,Webcam,Accessories,2026-01-05,9,110,15,841.5,USA,Online,PayPal
+42,1565,Private,501,Laptop,Electronics,2026-08-09,6,1200,10,6480.0,Germany,Online,Bank Transfer
+43,1215,Enterprise,506,Desk,Furniture,2026-05-08,1,450,0,450.0,USA,Partner,Cash
+44,1999,Private,503,Keyboard,Accessories,2026-07-31,4,80,0,320.0,Israel,Store,Bank Transfer
+45,1163,Enterprise,507,Headphones,Audio,2026-02-25,4,150,0,600.0,Spain,Online,Cash
+46,1358,Small Business,504,Mouse,Accessories,2026-04-27,4,40,5,152.0,France,Online,PayPal
+47,1885,Private,507,Headphones,Audio,2026-05-23,6,150,0,900.0,Netherlands,Marketplace,Bank Transfer
+48,1182,Enterprise,501,Laptop,Electronics,2026-05-16,2,1200,0,2400.0,Israel,Online,Cash
+49,1620,Enterprise,506,Desk,Furniture,2026-03-01,6,450,5,2565.0,Spain,Store,Bank Transfer
+50,1532,Enterprise,501,Laptop,Electronics,2026-12-18,7,1200,0,8400.0,France,Partner,Cash
+51,1321,Enterprise,502,Monitor,Electronics,2026-03-05,6,300,10,1620.0,United Kingdom,Partner,Cash
+52,1302,Enterprise,506,Desk,Furniture,2026-03-07,7,450,15,2677.5,France,Marketplace,Cash
+53,1308,Small Business,503,Keyboard,Accessories,2026-10-08,10,80,10,720.0,Israel,Partner,Bank Transfer
+54,1621,Enterprise,504,Mouse,Accessories,2026-06-14,7,40,10,252.0,Italy,Marketplace,Cash
+55,1812,Enterprise,504,Mouse,Accessories,2026-03-28,9,40,5,342.0,USA,Partner,Bank Transfer
+56,1317,Private,502,Monitor,Electronics,2026-04-12,4,300,15,1020.0,Germany,Online,Credit Card
+57,1870,Private,504,Mouse,Accessories,2026-08-22,8,40,10,288.0,Spain,Store,Cash
+58,1151,Enterprise,508,Webcam,Accessories,2026-12-19,7,110,0,770.0,Israel,Online,Cash
+59,1530,Small Business,504,Mouse,Accessories,2026-01-26,3,40,15,102.0,France,Online,Cash
+60,1543,Enterprise,503,Keyboard,Accessories,2026-11-01,8,80,15,544.0,Netherlands,Marketplace,Cash
+61,1882,Small Business,508,Webcam,Accessories,2026-08-19,3,110,15,280.5,United Kingdom,Store,Bank Transfer
+62,1450,Private,508,Webcam,Accessories,2026-05-27,4,110,0,440.0,France,Partner,Bank Transfer
+63,1141,Private,506,Desk,Furniture,2026-04-29,9,450,0,4050.0,Spain,Store,PayPal
+64,1338,Enterprise,502,Monitor,Electronics,2026-08-27,7,300,5,1995.0,Spain,Online,PayPal
+65,1968,Enterprise,507,Headphones,Audio,2026-01-11,7,150,10,945.0,Spain,Marketplace,Credit Card
+66,1873,Small Business,506,Desk,Furniture,2026-10-03,5,450,5,2137.5,France,Marketplace,PayPal
+67,1029,Small Business,505,Office Chair,Furniture,2026-06-22,7,250,5,1662.5,Spain,Store,Cash
+68,1027,Small Business,503,Keyboard,Accessories,2026-10-31,10,80,10,720.0,Israel,Online,Cash
+69,1051,Small Business,503,Keyboard,Accessories,2026-07-14,8,80,0,640.0,Netherlands,Store,Cash
+70,1284,Small Business,506,Desk,Furniture,2026-05-10,6,450,5,2565.0,USA,Marketplace,Credit Card
+71,1665,Private,501,Laptop,Electronics,2026-11-30,6,1200,0,7200.0,Israel,Online,PayPal
+72,1156,Private,504,Mouse,Accessories,2026-03-06,1,40,10,36.0,Italy,Online,PayPal
+73,1171,Enterprise,508,Webcam,Accessories,2026-11-07,5,110,0,550.0,USA,Store,Bank Transfer
+74,1951,Small Business,502,Monitor,Electronics,2026-10-22,10,300,0,3000.0,Spain,Marketplace,PayPal
+75,1850,Enterprise,502,Monitor,Electronics,2026-05-05,10,300,15,2550.0,USA,Partner,Credit Card
+76,1438,Enterprise,501,Laptop,Electronics,2026-07-09,6,1200,10,6480.0,USA,Partner,Credit Card
+77,1443,Small Business,507,Headphones,Audio,2026-11-22,8,150,0,1200.0,Italy,Store,Cash
+78,1276,Enterprise,503,Keyboard,Accessories,2026-10-03,9,80,15,612.0,Italy,Marketplace,Cash
+79,1850,Private,505,Office Chair,Furniture,2026-05-23,6,250,0,1500.0,Italy,Store,Cash
+80,1506,Small Business,507,Headphones,Audio,2026-04-04,6,150,0,900.0,Italy,Store,Bank Transfer
+81,1901,Enterprise,505,Office Chair,Furniture,2026-12-26,6,250,0,1500.0,United Kingdom,Online,PayPal
+82,1416,Small Business,502,Monitor,Electronics,2026-10-12,4,300,15,1020.0,France,Marketplace,Cash
+83,1301,Private,508,Webcam,Accessories,2026-07-27,1,110,0,110.0,France,Partner,Bank Transfer
+84,1352,Small Business,508,Webcam,Accessories,2026-10-09,9,110,10,891.0,Netherlands,Partner,Cash
+85,1236,Private,505,Office Chair,Furniture,2026-04-09,5,250,0,1250.0,Netherlands,Online,PayPal
+86,1495,Small Business,504,Mouse,Accessories,2026-10-29,4,40,15,136.0,United Kingdom,Online,PayPal
+87,1183,Small Business,505,Office Chair,Furniture,2026-01-08,4,250,0,1000.0,Germany,Partner,Credit Card
+88,1714,Private,501,Laptop,Electronics,2026-11-23,9,1200,0,10800.0,Italy,Online,Credit Card
+89,1451,Small Business,505,Office Chair,Furniture,2026-04-05,8,250,5,1900.0,Israel,Partner,Cash
+90,1503,Private,502,Monitor,Electronics,2026-10-23,2,300,5,570.0,Israel,Store,PayPal
+91,1121,Enterprise,505,Office Chair,Furniture,2026-08-02,2,250,0,500.0,France,Marketplace,Cash
+92,1439,Small Business,508,Webcam,Accessories,2026-10-19,5,110,10,495.0,Israel,Online,PayPal
+93,1083,Private,504,Mouse,Accessories,2026-05-03,5,40,15,170.0,Germany,Online,PayPal
+94,1705,Enterprise,501,Laptop,Electronics,2026-08-29,7,1200,5,7980.0,United Kingdom,Online,PayPal
+95,1880,Small Business,505,Office Chair,Furniture,2026-02-06,5,250,15,1062.5,France,Partner,PayPal
+96,1230,Enterprise,507,Headphones,Audio,2026-03-18,2,150,10,270.0,United Kingdom,Store,Credit Card
+97,1609,Enterprise,501,Laptop,Electronics,2026-10-19,3,1200,0,3600.0,United Kingdom,Marketplace,Credit Card
+98,1412,Small Business,508,Webcam,Accessories,2026-09-14,5,110,15,467.5,Italy,Marketplace,Credit Card
+99,1330,Enterprise,501,Laptop,Electronics,2026-05-09,7,1200,15,7140.0,Israel,Online,PayPal
+100,1041,Private,501,Laptop,Electronics,2026-08-29,5,1200,10,5400.0,Italy,Partner,PayPal
+101,1481,Small Business,507,Headphones,Audio,2026-07-29,8,150,0,1200.0,Netherlands,Partner,Credit Card
+102,1710,Small Business,503,Keyboard,Accessories,2026-05-28,6,80,5,456.0,Spain,Online,Cash
+103,1331,Private,502,Monitor,Electronics,2026-07-26,6,300,0,1800.0,Israel,Marketplace,Cash
+104,1370,Enterprise,501,Laptop,Electronics,2026-09-13,4,1200,10,4320.0,Italy,Online,PayPal
+105,1949,Small Business,505,Office Chair,Furniture,2026-08-13,9,250,0,2250.0,Italy,Online,Credit Card
+106,1564,Private,504,Mouse,Accessories,2026-10-10,3,40,0,120.0,Spain,Online,PayPal
+107,1663,Private,502,Monitor,Electronics,2026-09-13,8,300,0,2400.0,United Kingdom,Partner,Cash
+108,1467,Enterprise,508,Webcam,Accessories,2026-03-16,8,110,0,880.0,Spain,Store,PayPal
+109,1348,Enterprise,502,Monitor,Electronics,2026-05-17,5,300,5,1425.0,Israel,Partner,Bank Transfer
+110,1551,Small Business,508,Webcam,Accessories,2026-06-26,3,110,5,313.5,Netherlands,Marketplace,Cash
+111,1244,Enterprise,506,Desk,Furniture,2026-07-16,4,450,15,1530.0,France,Marketplace,Credit Card
+112,1935,Small Business,506,Desk,Furniture,2026-07-17,8,450,15,3060.0,Germany,Marketplace,Credit Card
+113,1339,Private,503,Keyboard,Accessories,2026-08-14,9,80,10,648.0,USA,Marketplace,Credit Card
+114,1993,Private,503,Keyboard,Accessories,2026-02-08,7,80,15,476.0,Italy,Partner,Bank Transfer
+115,1872,Enterprise,507,Headphones,Audio,2026-10-01,2,150,0,300.0,Spain,Partner,Cash
+116,1240,Enterprise,501,Laptop,Electronics,2026-12-17,10,1200,0,12000.0,United Kingdom,Store,Credit Card
+117,1720,Private,507,Headphones,Audio,2026-08-16,2,150,15,255.0,Germany,Partner,Credit Card
+118,1300,Small Business,501,Laptop,Electronics,2026-07-11,6,1200,0,7200.0,Spain,Store,PayPal
+119,1811,Private,507,Headphones,Audio,2026-03-29,10,150,15,1275.0,Germany,Online,Cash
+120,1146,Private,504,Mouse,Accessories,2026-08-25,8,40,10,288.0,United Kingdom,Marketplace,Bank Transfer
+121,1693,Enterprise,501,Laptop,Electronics,2026-03-22,8,1200,0,9600.0,USA,Marketplace,Bank Transfer
+122,1256,Small Business,505,Office Chair,Furniture,2026-06-04,7,250,15,1487.5,France,Marketplace,Cash
+123,1585,Small Business,502,Monitor,Electronics,2026-10-22,4,300,5,1140.0,United Kingdom,Partner,Credit Card
+124,1579,Enterprise,507,Headphones,Audio,2026-01-26,5,150,0,750.0,Italy,Partner,PayPal
+125,1194,Enterprise,506,Desk,Furniture,2026-05-09,4,450,15,1530.0,Germany,Online,Credit Card
+126,1593,Small Business,505,Office Chair,Furniture,2026-03-09,8,250,0,2000.0,USA,Partner,Bank Transfer
+127,1135,Enterprise,507,Headphones,Audio,2026-07-07,3,150,0,450.0,United Kingdom,Store,Bank Transfer
+128,1891,Small Business,508,Webcam,Accessories,2026-02-28,5,110,15,467.5,Italy,Online,PayPal
+129,1374,Private,504,Mouse,Accessories,2026-07-22,7,40,10,252.0,Israel,Partner,Credit Card
+130,1766,Enterprise,508,Webcam,Accessories,2026-05-15,6,110,15,561.0,Spain,Partner,Credit Card
+131,1634,Enterprise,504,Mouse,Accessories,2026-06-17,8,40,0,320.0,France,Online,Cash
+132,1143,Private,505,Office Chair,Furniture,2026-01-20,7,250,0,1750.0,United Kingdom,Marketplace,Credit Card
+133,1138,Small Business,502,Monitor,Electronics,2026-08-21,4,300,10,1080.0,Netherlands,Marketplace,PayPal
+134,1630,Small Business,507,Headphones,Audio,2026-05-24,2,150,5,285.0,Israel,Partner,PayPal
+135,1875,Small Business,508,Webcam,Accessories,2026-02-20,8,110,0,880.0,Netherlands,Partner,Credit Card
+136,1991,Private,507,Headphones,Audio,2026-08-21,5,150,0,750.0,USA,Store,Credit Card
+137,1128,Enterprise,501,Laptop,Electronics,2026-04-16,6,1200,0,7200.0,USA,Store,PayPal
+138,1807,Enterprise,504,Mouse,Accessories,2026-01-02,6,40,0,240.0,United Kingdom,Store,PayPal
+139,1676,Private,505,Office Chair,Furniture,2026-03-09,3,250,0,750.0,Israel,Partner,PayPal
+140,1271,Private,506,Desk,Furniture,2026-03-06,1,450,0,450.0,Spain,Online,Credit Card
+141,1525,Enterprise,508,Webcam,Accessories,2026-02-25,8,110,0,880.0,Italy,Store,Credit Card
+142,1987,Private,505,Office Chair,Furniture,2026-02-01,8,250,15,1700.0,Italy,Marketplace,Cash
+143,1931,Small Business,502,Monitor,Electronics,2026-02-07,8,300,15,2040.0,USA,Partner,PayPal
+144,1639,Enterprise,502,Monitor,Electronics,2026-10-27,3,300,0,900.0,Netherlands,Marketplace,Bank Transfer
+145,1440,Private,508,Webcam,Accessories,2026-12-26,9,110,10,891.0,USA,Store,Cash
+146,1347,Small Business,508,Webcam,Accessories,2026-07-24,4,110,5,418.0,Spain,Online,Bank Transfer
+147,1261,Small Business,507,Headphones,Audio,2026-03-20,6,150,15,765.0,Italy,Online,Credit Card
+148,1098,Enterprise,502,Monitor,Electronics,2026-07-10,2,300,5,570.0,Germany,Online,Bank Transfer
+149,1894,Enterprise,502,Monitor,Electronics,2026-08-05,7,300,0,2100.0,Israel,Partner,Bank Transfer
+150,1519,Private,506,Desk,Furniture,2026-03-21,2,450,10,810.0,Italy,Store,Credit Card
+151,1117,Small Business,506,Desk,Furniture,2026-10-21,9,450,0,4050.0,France,Marketplace,Credit Card
+152,1279,Enterprise,505,Office Chair,Furniture,2026-06-08,1,250,0,250.0,Netherlands,Partner,Credit Card
+153,1673,Small Business,503,Keyboard,Accessories,2026-02-05,3,80,10,216.0,Germany,Online,Credit Card
+154,1464,Small Business,504,Mouse,Accessories,2026-03-22,7,40,5,266.0,Netherlands,Partner,Bank Transfer
+155,1161,Enterprise,502,Monitor,Electronics,2026-01-26,1,300,0,300.0,USA,Partner,Cash
+156,1452,Small Business,507,Headphones,Audio,2026-05-20,8,150,10,1080.0,France,Online,Bank Transfer
+157,1694,Enterprise,507,Headphones,Audio,2026-10-31,2,150,0,300.0,Italy,Partner,Credit Card
+158,1056,Private,504,Mouse,Accessories,2026-04-15,7,40,10,252.0,United Kingdom,Store,PayPal
+159,1122,Private,505,Office Chair,Furniture,2026-09-12,5,250,0,1250.0,Spain,Store,PayPal
+160,1235,Enterprise,507,Headphones,Audio,2026-10-14,9,150,15,1147.5,Netherlands,Online,Cash
+161,1470,Private,501,Laptop,Electronics,2026-06-10,7,1200,0,8400.0,Spain,Marketplace,Cash
+162,1021,Small Business,505,Office Chair,Furniture,2026-03-29,2,250,5,475.0,Italy,Partner,Credit Card
+163,1446,Enterprise,507,Headphones,Audio,2026-07-25,2,150,0,300.0,USA,Marketplace,Bank Transfer
+164,1797,Private,506,Desk,Furniture,2026-02-09,4,450,0,1800.0,USA,Store,Bank Transfer
+165,1105,Private,506,Desk,Furniture,2026-05-12,3,450,0,1350.0,France,Store,PayPal
+166,1505,Small Business,502,Monitor,Electronics,2026-10-16,3,300,15,765.0,Italy,Partner,Bank Transfer
+167,1480,Small Business,503,Keyboard,Accessories,2026-11-20,8,80,0,640.0,United Kingdom,Partner,Credit Card
+168,1317,Small Business,506,Desk,Furniture,2026-08-20,9,450,0,4050.0,Israel,Online,Bank Transfer
+169,1884,Private,505,Office Chair,Furniture,2026-11-11,2,250,15,425.0,Spain,Marketplace,Credit Card
+170,1192,Small Business,508,Webcam,Accessories,2026-11-06,10,110,15,935.0,Italy,Store,Credit Card
+171,1731,Private,508,Webcam,Accessories,2026-09-16,2,110,0,220.0,Germany,Online,PayPal
+172,1535,Enterprise,508,Webcam,Accessories,2026-03-23,8,110,10,792.0,Netherlands,Partner,Bank Transfer
+173,1695,Enterprise,507,Headphones,Audio,2026-01-27,7,150,0,1050.0,Netherlands,Online,Bank Transfer
+174,1395,Small Business,502,Monitor,Electronics,2026-05-10,9,300,15,2295.0,Germany,Partner,Credit Card
+175,1990,Enterprise,503,Keyboard,Accessories,2026-12-24,6,80,0,480.0,Spain,Store,Credit Card
+176,1658,Small Business,505,Office Chair,Furniture,2026-03-07,9,250,5,2137.5,USA,Marketplace,Bank Transfer
+177,1184,Private,501,Laptop,Electronics,2026-06-24,6,1200,0,7200.0,Italy,Store,PayPal
+178,1302,Private,503,Keyboard,Accessories,2026-09-17,3,80,0,240.0,Israel,Partner,PayPal
+179,1185,Enterprise,507,Headphones,Audio,2026-11-16,3,150,0,450.0,Germany,Marketplace,Credit Card
+180,1736,Private,507,Headphones,Audio,2026-08-16,6,150,15,765.0,United Kingdom,Marketplace,PayPal
+181,1925,Private,504,Mouse,Accessories,2026-07-08,5,40,5,190.0,Italy,Marketplace,Bank Transfer
+182,1428,Private,507,Headphones,Audio,2026-04-13,9,150,10,1215.0,Germany,Partner,Credit Card
+183,1956,Private,508,Webcam,Accessories,2026-12-31,6,110,10,594.0,USA,Partner,Credit Card
+184,1927,Enterprise,503,Keyboard,Accessories,2026-03-17,5,80,5,380.0,Spain,Online,PayPal
+185,1424,Private,508,Webcam,Accessories,2026-07-22,6,110,0,660.0,Netherlands,Store,Cash
+186,1028,Small Business,502,Monitor,Electronics,2026-02-20,6,300,0,1800.0,Netherlands,Store,PayPal
+187,1712,Private,501,Laptop,Electronics,2026-12-28,5,1200,5,5700.0,Italy,Marketplace,Credit Card
+188,1220,Private,502,Monitor,Electronics,2026-10-08,1,300,0,300.0,Spain,Online,Bank Transfer
+189,1048,Private,504,Mouse,Accessories,2026-08-03,5,40,0,200.0,Italy,Online,Credit Card
+190,1016,Enterprise,508,Webcam,Accessories,2026-09-21,10,110,10,990.0,France,Store,Bank Transfer
+191,1361,Private,507,Headphones,Audio,2026-10-20,1,150,10,135.0,Spain,Store,Credit Card
+192,1557,Enterprise,506,Desk,Furniture,2026-09-17,2,450,10,810.0,Israel,Marketplace,Cash
+193,1259,Enterprise,501,Laptop,Electronics,2026-01-09,7,1200,0,8400.0,Netherlands,Online,Bank Transfer
+194,1752,Small Business,504,Mouse,Accessories,2026-03-10,2,40,10,72.0,Israel,Partner,Bank Transfer
+195,1490,Enterprise,503,Keyboard,Accessories,2026-04-04,8,80,15,544.0,Germany,Online,Cash
+196,1044,Private,501,Laptop,Electronics,2026-01-22,5,1200,0,6000.0,Netherlands,Partner,Cash
+197,1771,Enterprise,508,Webcam,Accessories,2026-04-08,5,110,0,550.0,United Kingdom,Partner,Credit Card
+198,1818,Small Business,506,Desk,Furniture,2026-08-12,5,450,0,2250.0,Spain,Marketplace,Cash
+199,1708,Small Business,506,Desk,Furniture,2026-07-08,3,450,5,1282.5,United Kingdom,Online,Cash
+200,1842,Private,502,Monitor,Electronics,2026-10-07,7,300,10,1890.0,United Kingdom,Partner,Credit Card
+201,1302,Small Business,502,Monitor,Electronics,2026-08-17,6,300,15,1530.0,Spain,Store,Cash
+202,1744,Small Business,506,Desk,Furniture,2026-11-11,8,450,0,3600.0,Spain,Partner,Credit Card
+203,1525,Enterprise,502,Monitor,Electronics,2026-12-14,7,300,0,2100.0,Germany,Online,PayPal
+204,1068,Private,508,Webcam,Accessories,2026-11-27,1,110,0,110.0,Netherlands,Partner,Cash
+205,1695,Small Business,501,Laptop,Electronics,2026-07-09,10,1200,0,12000.0,Netherlands,Marketplace,Credit Card
+206,1407,Small Business,503,Keyboard,Accessories,2026-11-29,9,80,0,720.0,United Kingdom,Store,Credit Card
+207,1530,Small Business,501,Laptop,Electronics,2026-10-15,3,1200,5,3420.0,USA,Partner,Bank Transfer
+208,1292,Enterprise,508,Webcam,Accessories,2026-09-09,4,110,10,396.0,France,Online,PayPal
+209,1920,Enterprise,502,Monitor,Electronics,2026-08-16,8,300,0,2400.0,USA,Partner,Bank Transfer
+210,1297,Small Business,502,Monitor,Electronics,2026-03-22,9,300,10,2430.0,Germany,Partner,PayPal
+211,1242,Small Business,502,Monitor,Electronics,2026-01-14,4,300,0,1200.0,Netherlands,Partner,Cash
+212,1067,Small Business,503,Keyboard,Accessories,2026-07-23,10,80,0,800.0,Italy,Marketplace,Cash
+213,1657,Private,502,Monitor,Electronics,2026-08-19,3,300,0,900.0,Italy,Partner,PayPal
+214,1514,Private,503,Keyboard,Accessories,2026-03-05,3,80,5,228.0,Germany,Partner,PayPal
+215,1230,Small Business,503,Keyboard,Accessories,2026-09-23,6,80,15,408.0,United Kingdom,Online,Bank Transfer
+216,1128,Enterprise,504,Mouse,Accessories,2026-06-05,9,40,0,360.0,USA,Store,PayPal
+217,1923,Enterprise,503,Keyboard,Accessories,2026-06-22,10,80,15,680.0,Israel,Online,Credit Card
+218,1666,Private,501,Laptop,Electronics,2026-10-20,10,1200,0,12000.0,Spain,Online,Cash
+219,1250,Enterprise,505,Office Chair,Furniture,2026-07-27,5,250,5,1187.5,United Kingdom,Marketplace,Credit Card
+220,1425,Small Business,501,Laptop,Electronics,2026-08-26,3,1200,5,3420.0,France,Partner,PayPal
+221,1881,Small Business,506,Desk,Furniture,2026-07-24,6,450,15,2295.0,Germany,Partner,Credit Card
+222,1125,Small Business,506,Desk,Furniture,2026-08-19,4,450,5,1710.0,France,Store,Credit Card
+223,1884,Enterprise,501,Laptop,Electronics,2026-08-03,5,1200,5,5700.0,France,Store,Bank Transfer
+224,1510,Enterprise,506,Desk,Furniture,2026-08-28,4,450,0,1800.0,Italy,Partner,Cash
+225,1517,Small Business,501,Laptop,Electronics,2026-05-04,2,1200,5,2280.0,France,Partner,Credit Card
+226,1611,Enterprise,501,Laptop,Electronics,2026-12-11,5,1200,5,5700.0,Italy,Partner,Credit Card
+227,1903,Small Business,502,Monitor,Electronics,2026-07-07,7,300,0,2100.0,Spain,Partner,Credit Card
+228,1575,Private,507,Headphones,Audio,2026-07-05,1,150,10,135.0,United Kingdom,Online,Cash
+229,1845,Enterprise,508,Webcam,Accessories,2026-12-15,9,110,0,990.0,USA,Store,Credit Card
+230,1571,Small Business,507,Headphones,Audio,2026-03-15,6,150,0,900.0,France,Marketplace,Credit Card
+231,1730,Small Business,501,Laptop,Electronics,2026-08-31,1,1200,0,1200.0,Italy,Store,PayPal
+232,1166,Small Business,506,Desk,Furniture,2026-11-12,10,450,0,4500.0,United Kingdom,Partner,Cash
+233,1377,Small Business,505,Office Chair,Furniture,2026-12-11,8,250,0,2000.0,USA,Marketplace,Bank Transfer
+234,1271,Enterprise,501,Laptop,Electronics,2026-10-24,10,1200,5,11400.0,France,Online,Cash
+235,1738,Enterprise,503,Keyboard,Accessories,2026-07-14,9,80,15,612.0,Germany,Store,Credit Card
+236,1451,Small Business,502,Monitor,Electronics,2026-08-03,4,300,0,1200.0,Germany,Marketplace,PayPal
+237,1942,Small Business,507,Headphones,Audio,2026-02-01,9,150,10,1215.0,Germany,Store,Bank Transfer
+238,1321,Private,508,Webcam,Accessories,2026-08-24,9,110,5,940.5,Netherlands,Partner,Bank Transfer
+239,1285,Enterprise,508,Webcam,Accessories,2026-06-02,4,110,0,440.0,France,Partner,Bank Transfer
+240,1491,Small Business,504,Mouse,Accessories,2026-10-14,8,40,0,320.0,United Kingdom,Partner,Credit Card
+241,1977,Private,507,Headphones,Audio,2026-05-29,7,150,0,1050.0,Israel,Partner,Credit Card
+242,1262,Enterprise,506,Desk,Furniture,2026-09-03,8,450,15,3060.0,France,Store,Bank Transfer
+243,1630,Enterprise,505,Office Chair,Furniture,2026-10-28,3,250,0,750.0,France,Store,Credit Card
+244,1102,Small Business,504,Mouse,Accessories,2026-06-19,4,40,0,160.0,Italy,Online,PayPal
+245,1416,Enterprise,501,Laptop,Electronics,2026-09-01,9,1200,0,10800.0,Italy,Store,Bank Transfer
+246,1060,Private,506,Desk,Furniture,2026-11-30,5,450,15,1912.5,France,Online,PayPal
+247,1856,Small Business,507,Headphones,Audio,2026-09-11,3,150,0,450.0,Germany,Partner,Credit Card
+248,1617,Private,501,Laptop,Electronics,2026-06-21,5,1200,10,5400.0,United Kingdom,Marketplace,Cash
+249,1279,Private,503,Keyboard,Accessories,2026-02-27,9,80,5,684.0,Netherlands,Store,Cash
+250,1754,Small Business,505,Office Chair,Furniture,2026-06-01,3,250,0,750.0,France,Store,Cash
+251,1088,Small Business,507,Headphones,Audio,2026-12-09,9,150,0,1350.0,USA,Store,PayPal
+252,1006,Small Business,508,Webcam,Accessories,2026-07-16,6,110,0,660.0,France,Marketplace,Bank Transfer
+253,1740,Enterprise,506,Desk,Furniture,2026-01-06,5,450,10,2025.0,United Kingdom,Partner,PayPal
+254,1314,Private,501,Laptop,Electronics,2026-07-27,2,1200,5,2280.0,United Kingdom,Online,Bank Transfer
+255,1224,Private,506,Desk,Furniture,2026-09-02,10,450,0,4500.0,Germany,Marketplace,Bank Transfer
+256,1775,Enterprise,507,Headphones,Audio,2026-12-07,9,150,5,1282.5,France,Store,Credit Card
+257,1370,Private,508,Webcam,Accessories,2026-10-16,9,110,15,841.5,USA,Online,PayPal
+258,1874,Enterprise,503,Keyboard,Accessories,2026-08-15,3,80,0,240.0,USA,Store,Cash
+259,1828,Private,502,Monitor,Electronics,2026-08-21,9,300,5,2565.0,Germany,Marketplace,Cash
+260,1688,Small Business,501,Laptop,Electronics,2026-01-12,9,1200,5,10260.0,Spain,Partner,Credit Card
+261,1046,Small Business,504,Mouse,Accessories,2026-06-26,10,40,0,400.0,USA,Online,Credit Card
+262,1418,Private,508,Webcam,Accessories,2026-03-11,1,110,0,110.0,Spain,Partner,Cash
+263,1082,Enterprise,508,Webcam,Accessories,2026-12-05,7,110,5,731.5,Germany,Partner,Credit Card
+264,1541,Private,503,Keyboard,Accessories,2026-04-25,9,80,5,684.0,Israel,Online,Bank Transfer
+265,1544,Small Business,508,Webcam,Accessories,2026-04-28,9,110,5,940.5,France,Marketplace,Bank Transfer
+266,1959,Enterprise,503,Keyboard,Accessories,2026-02-27,5,80,0,400.0,Israel,Marketplace,Credit Card
+267,1103,Enterprise,504,Mouse,Accessories,2026-01-18,4,40,0,160.0,Italy,Online,PayPal
+268,1239,Enterprise,501,Laptop,Electronics,2026-04-22,7,1200,5,7980.0,Israel,Store,Bank Transfer
+269,1591,Enterprise,504,Mouse,Accessories,2026-12-11,10,40,0,400.0,Netherlands,Store,Bank Transfer
+270,1423,Small Business,503,Keyboard,Accessories,2026-05-21,9,80,0,720.0,Israel,Store,Cash
+271,1964,Enterprise,508,Webcam,Accessories,2026-12-10,1,110,0,110.0,Spain,Partner,Cash
+272,1385,Private,507,Headphones,Audio,2026-10-03,3,150,0,450.0,Italy,Store,PayPal
+273,1936,Private,505,Office Chair,Furniture,2026-10-15,3,250,5,712.5,Spain,Marketplace,PayPal
+274,1208,Small Business,507,Headphones,Audio,2026-11-28,4,150,0,600.0,USA,Marketplace,Bank Transfer
+275,1849,Private,502,Monitor,Electronics,2026-01-27,9,300,15,2295.0,United Kingdom,Marketplace,Credit Card
+276,1741,Enterprise,502,Monitor,Electronics,2026-10-14,4,300,10,1080.0,France,Marketplace,PayPal
+277,1216,Private,506,Desk,Furniture,2026-03-02,5,450,0,2250.0,Italy,Store,PayPal
+278,1329,Small Business,507,Headphones,Audio,2026-07-14,4,150,10,540.0,Italy,Partner,Bank Transfer
+279,1903,Small Business,505,Office Chair,Furniture,2026-08-27,6,250,10,1350.0,USA,Marketplace,Bank Transfer
+280,1423,Private,504,Mouse,Accessories,2026-10-16,6,40,0,240.0,France,Store,Credit Card
+281,1593,Enterprise,505,Office Chair,Furniture,2026-08-02,9,250,10,2025.0,United Kingdom,Store,PayPal
+282,1583,Private,506,Desk,Furniture,2026-09-13,4,450,5,1710.0,Netherlands,Partner,Cash
+283,1750,Small Business,508,Webcam,Accessories,2026-03-28,8,110,0,880.0,Germany,Marketplace,PayPal
+284,1859,Private,501,Laptop,Electronics,2026-12-09,9,1200,0,10800.0,Israel,Online,Cash
+285,1724,Private,503,Keyboard,Accessories,2026-01-05,4,80,0,320.0,France,Marketplace,Bank Transfer
+286,1682,Enterprise,501,Laptop,Electronics,2026-09-05,10,1200,15,10200.0,Italy,Online,Credit Card
+287,1542,Enterprise,507,Headphones,Audio,2026-05-21,1,150,0,150.0,United Kingdom,Online,Cash
+288,1536,Private,503,Keyboard,Accessories,2026-05-04,2,80,0,160.0,France,Partner,Bank Transfer
+289,1382,Small Business,505,Office Chair,Furniture,2026-08-24,7,250,0,1750.0,France,Store,Bank Transfer
+290,1415,Small Business,502,Monitor,Electronics,2026-07-13,1,300,0,300.0,Italy,Online,Credit Card
+291,1865,Small Business,503,Keyboard,Accessories,2026-11-27,2,80,5,152.0,Netherlands,Online,Credit Card
+292,1908,Enterprise,504,Mouse,Accessories,2026-09-01,4,40,15,136.0,United Kingdom,Online,Credit Card
+293,1673,Private,505,Office Chair,Furniture,2026-04-02,9,250,10,2025.0,Netherlands,Online,PayPal
+294,1306,Private,503,Keyboard,Accessories,2026-10-16,7,80,0,560.0,France,Marketplace,Bank Transfer
+295,1741,Private,507,Headphones,Audio,2026-09-14,3,150,15,382.5,Netherlands,Online,Credit Card
+296,1348,Enterprise,507,Headphones,Audio,2026-11-11,4,150,0,600.0,Spain,Partner,Credit Card
+297,1233,Small Business,505,Office Chair,Furniture,2026-10-11,8,250,5,1900.0,Spain,Marketplace,PayPal
+298,1302,Private,507,Headphones,Audio,2026-02-07,2,150,10,270.0,USA,Partner,PayPal
+299,1398,Small Business,507,Headphones,Audio,2026-07-04,3,150,15,382.5,USA,Online,Credit Card
+300,1779,Small Business,505,Office Chair,Furniture,2026-02-22,8,250,0,2000.0,Germany,Online,PayPal
+301,1568,Enterprise,507,Headphones,Audio,2026-07-28,8,150,10,1080.0,USA,Online,Credit Card
+302,1611,Enterprise,506,Desk,Furniture,2026-06-16,9,450,0,4050.0,Spain,Online,Bank Transfer
+303,1742,Enterprise,507,Headphones,Audio,2026-05-05,7,150,0,1050.0,Germany,Marketplace,PayPal
+304,1274,Small Business,503,Keyboard,Accessories,2026-03-16,5,80,0,400.0,USA,Store,Cash
+305,1495,Private,505,Office Chair,Furniture,2026-07-04,7,250,0,1750.0,United Kingdom,Store,Cash
+306,1138,Small Business,504,Mouse,Accessories,2026-01-04,8,40,0,320.0,Spain,Partner,Cash
+307,1440,Enterprise,506,Desk,Furniture,2026-11-01,8,450,0,3600.0,Germany,Partner,Bank Transfer
+308,1181,Small Business,504,Mouse,Accessories,2026-06-13,8,40,0,320.0,United Kingdom,Marketplace,PayPal
+309,1836,Small Business,506,Desk,Furniture,2026-07-06,7,450,0,3150.0,USA,Store,PayPal
+310,1214,Small Business,501,Laptop,Electronics,2026-05-30,8,1200,15,8160.0,USA,Marketplace,Cash
+311,1258,Enterprise,503,Keyboard,Accessories,2026-03-20,5,80,0,400.0,Spain,Marketplace,Credit Card
+312,1596,Small Business,508,Webcam,Accessories,2026-10-01,10,110,5,1045.0,Spain,Online,Bank Transfer
+313,1673,Enterprise,502,Monitor,Electronics,2026-07-01,2,300,0,600.0,Germany,Online,Cash
+314,1010,Private,506,Desk,Furniture,2026-05-13,7,450,0,3150.0,France,Store,Cash
+315,1790,Enterprise,506,Desk,Furniture,2026-10-29,7,450,5,2992.5,Germany,Partner,Credit Card
+316,1425,Private,508,Webcam,Accessories,2026-03-01,2,110,0,220.0,Germany,Partner,Bank Transfer
+317,1533,Small Business,506,Desk,Furniture,2026-06-28,8,450,0,3600.0,Italy,Online,Cash
+318,1307,Private,508,Webcam,Accessories,2026-12-30,6,110,0,660.0,USA,Online,Bank Transfer
+319,1249,Enterprise,502,Monitor,Electronics,2026-03-31,3,300,15,765.0,Germany,Partner,Cash
+320,1644,Private,508,Webcam,Accessories,2026-04-06,4,110,5,418.0,Spain,Marketplace,Credit Card
+321,1439,Small Business,504,Mouse,Accessories,2026-01-03,8,40,10,288.0,France,Store,Bank Transfer
+322,1818,Enterprise,502,Monitor,Electronics,2026-04-06,10,300,0,3000.0,Netherlands,Partner,PayPal
+323,1686,Small Business,508,Webcam,Accessories,2026-09-28,2,110,0,220.0,Netherlands,Marketplace,Cash
+324,1865,Small Business,502,Monitor,Electronics,2026-11-13,6,300,0,1800.0,Germany,Partner,Credit Card
+325,1244,Small Business,503,Keyboard,Accessories,2026-03-01,6,80,0,480.0,Germany,Partner,PayPal
+326,1141,Enterprise,507,Headphones,Audio,2026-07-16,7,150,10,945.0,Spain,Store,Cash
+327,1501,Small Business,503,Keyboard,Accessories,2026-03-13,9,80,0,720.0,Germany,Partner,Cash
+328,1496,Private,501,Laptop,Electronics,2026-04-10,6,1200,0,7200.0,Spain,Marketplace,Cash
+329,1860,Small Business,508,Webcam,Accessories,2026-09-08,7,110,15,654.5,Germany,Online,Credit Card
+330,1281,Private,504,Mouse,Accessories,2026-10-03,5,40,0,200.0,United Kingdom,Store,Cash
+331,1115,Enterprise,508,Webcam,Accessories,2026-02-28,9,110,10,891.0,United Kingdom,Partner,Credit Card
+332,1435,Private,508,Webcam,Accessories,2026-12-01,9,110,0,990.0,France,Partner,Credit Card
+333,1882,Private,508,Webcam,Accessories,2026-08-13,5,110,0,550.0,USA,Store,PayPal
+334,1438,Private,506,Desk,Furniture,2026-11-12,10,450,15,3825.0,Germany,Store,PayPal
+335,1545,Small Business,501,Laptop,Electronics,2026-11-02,10,1200,0,12000.0,Germany,Partner,Bank Transfer
+336,1975,Enterprise,505,Office Chair,Furniture,2026-12-14,10,250,0,2500.0,USA,Store,Cash
+337,1129,Enterprise,501,Laptop,Electronics,2026-03-09,5,1200,15,5100.0,France,Store,Bank Transfer
+338,1145,Enterprise,504,Mouse,Accessories,2026-11-20,7,40,5,266.0,United Kingdom,Marketplace,Cash
+339,1813,Private,508,Webcam,Accessories,2026-07-26,2,110,15,187.0,United Kingdom,Partner,Cash
+340,1002,Enterprise,508,Webcam,Accessories,2026-02-17,6,110,10,594.0,Italy,Partner,Credit Card
+341,1844,Private,507,Headphones,Audio,2026-09-11,4,150,5,570.0,United Kingdom,Partner,Bank Transfer
+342,1133,Enterprise,506,Desk,Furniture,2026-09-06,9,450,10,3645.0,Netherlands,Online,Credit Card
+343,1127,Private,502,Monitor,Electronics,2026-08-14,8,300,0,2400.0,Italy,Online,Cash
+344,1309,Private,504,Mouse,Accessories,2026-05-21,3,40,15,102.0,USA,Partner,Bank Transfer
+345,1925,Enterprise,502,Monitor,Electronics,2026-03-26,6,300,15,1530.0,Israel,Marketplace,Bank Transfer
+346,1093,Enterprise,504,Mouse,Accessories,2026-02-18,7,40,15,238.0,Israel,Store,Cash
+347,1231,Enterprise,502,Monitor,Electronics,2026-12-15,3,300,10,810.0,Italy,Online,Credit Card
+348,1710,Private,506,Desk,Furniture,2026-09-02,2,450,5,855.0,USA,Store,Cash
+349,1320,Small Business,502,Monitor,Electronics,2026-06-03,2,300,0,600.0,Germany,Marketplace,PayPal
+350,1576,Private,503,Keyboard,Accessories,2026-11-09,2,80,10,144.0,Germany,Marketplace,Bank Transfer
+351,1630,Enterprise,504,Mouse,Accessories,2026-08-15,3,40,5,114.0,France,Online,Credit Card
+352,1747,Small Business,503,Keyboard,Accessories,2026-06-29,2,80,10,144.0,Spain,Partner,PayPal
+353,1086,Private,504,Mouse,Accessories,2026-10-11,5,40,15,170.0,United Kingdom,Online,Bank Transfer
+354,1521,Private,504,Mouse,Accessories,2026-07-20,9,40,10,324.0,United Kingdom,Online,PayPal
+355,1246,Small Business,508,Webcam,Accessories,2026-11-23,7,110,0,770.0,USA,Online,Bank Transfer
+356,1881,Enterprise,506,Desk,Furniture,2026-08-04,3,450,5,1282.5,Netherlands,Store,Cash
+357,1069,Private,502,Monitor,Electronics,2026-05-15,1,300,10,270.0,France,Online,Credit Card
+358,1643,Enterprise,507,Headphones,Audio,2026-09-14,9,150,0,1350.0,Spain,Marketplace,Cash
+359,1630,Private,502,Monitor,Electronics,2026-05-23,9,300,10,2430.0,USA,Partner,Credit Card
+360,1334,Small Business,504,Mouse,Accessories,2026-10-28,3,40,10,108.0,USA,Partner,Cash
+361,1088,Small Business,504,Mouse,Accessories,2026-03-01,1,40,0,40.0,Italy,Online,Bank Transfer
+362,1724,Private,503,Keyboard,Accessories,2026-12-26,2,80,0,160.0,Israel,Store,Cash
+363,1801,Enterprise,506,Desk,Furniture,2026-05-13,9,450,10,3645.0,Germany,Partner,PayPal
+364,1343,Small Business,505,Office Chair,Furniture,2026-05-20,2,250,0,500.0,USA,Partner,Credit Card
+365,1368,Private,508,Webcam,Accessories,2026-09-13,8,110,10,792.0,Germany,Partner,PayPal
+366,1690,Enterprise,505,Office Chair,Furniture,2026-03-01,2,250,10,450.0,France,Online,Credit Card
+367,1483,Small Business,501,Laptop,Electronics,2026-07-16,4,1200,0,4800.0,Germany,Store,Credit Card
+368,1254,Small Business,507,Headphones,Audio,2026-06-13,4,150,0,600.0,United Kingdom,Online,Bank Transfer
+369,1923,Private,502,Monitor,Electronics,2026-04-02,9,300,15,2295.0,France,Online,Cash
+370,1792,Small Business,502,Monitor,Electronics,2026-06-17,8,300,0,2400.0,USA,Marketplace,Credit Card
+371,1577,Small Business,506,Desk,Furniture,2026-11-15,4,450,0,1800.0,France,Marketplace,Bank Transfer
+372,1922,Enterprise,508,Webcam,Accessories,2026-05-06,4,110,15,374.0,Germany,Online,Cash
+373,1354,Enterprise,501,Laptop,Electronics,2026-12-22,4,1200,10,4320.0,Israel,Partner,Credit Card
+374,1210,Enterprise,507,Headphones,Audio,2026-05-02,5,150,0,750.0,Spain,Marketplace,Credit Card
+375,1044,Private,503,Keyboard,Accessories,2026-09-24,5,80,0,400.0,Spain,Partner,Cash
+376,1517,Private,502,Monitor,Electronics,2026-11-23,10,300,0,3000.0,Spain,Online,Credit Card
+377,1298,Small Business,507,Headphones,Audio,2026-06-11,3,150,0,450.0,Spain,Partner,Bank Transfer
+378,1076,Private,508,Webcam,Accessories,2026-03-11,5,110,0,550.0,USA,Store,Credit Card
+379,1321,Small Business,503,Keyboard,Accessories,2026-03-03,8,80,5,608.0,Netherlands,Store,Cash
+380,1872,Private,505,Office Chair,Furniture,2026-02-16,8,250,0,2000.0,Germany,Partner,Credit Card
+381,1093,Enterprise,504,Mouse,Accessories,2026-05-08,6,40,0,240.0,Netherlands,Marketplace,Credit Card
+382,1031,Small Business,505,Office Chair,Furniture,2026-08-20,5,250,0,1250.0,France,Online,Cash
+383,1012,Private,502,Monitor,Electronics,2026-04-24,3,300,0,900.0,Germany,Store,Cash
+384,1600,Small Business,506,Desk,Furniture,2026-02-08,2,450,10,810.0,Israel,Online,PayPal
+385,1926,Small Business,508,Webcam,Accessories,2026-03-04,3,110,0,330.0,Israel,Marketplace,Credit Card
+386,1841,Enterprise,503,Keyboard,Accessories,2026-07-22,10,80,5,760.0,Italy,Online,Cash
+387,1219,Private,507,Headphones,Audio,2026-05-21,3,150,0,450.0,United Kingdom,Marketplace,PayPal
+388,1631,Private,501,Laptop,Electronics,2026-11-28,10,1200,10,10800.0,United Kingdom,Marketplace,Cash
+389,1286,Small Business,508,Webcam,Accessories,2026-03-12,1,110,0,110.0,Spain,Store,PayPal
+390,1367,Small Business,501,Laptop,Electronics,2026-10-06,7,1200,15,7140.0,Italy,Partner,Bank Transfer
+391,1026,Small Business,507,Headphones,Audio,2026-11-02,5,150,0,750.0,France,Online,Bank Transfer
+392,1366,Enterprise,501,Laptop,Electronics,2026-04-30,8,1200,10,8640.0,Germany,Online,PayPal
+393,1835,Enterprise,504,Mouse,Accessories,2026-01-29,5,40,10,180.0,France,Marketplace,Bank Transfer
+394,1606,Small Business,503,Keyboard,Accessories,2026-12-24,3,80,0,240.0,Netherlands,Online,Bank Transfer
+395,1856,Small Business,503,Keyboard,Accessories,2026-10-05,10,80,0,800.0,United Kingdom,Store,Cash
+396,1238,Enterprise,501,Laptop,Electronics,2026-04-23,2,1200,0,2400.0,Israel,Marketplace,Credit Card
+397,1825,Private,506,Desk,Furniture,2026-06-24,10,450,0,4500.0,Germany,Partner,Credit Card
+398,1721,Private,501,Laptop,Electronics,2026-02-26,3,1200,10,3240.0,Netherlands,Online,Bank Transfer
+399,1344,Small Business,507,Headphones,Audio,2026-06-15,10,150,0,1500.0,Germany,Store,Cash
+400,1724,Enterprise,508,Webcam,Accessories,2026-12-22,6,110,0,660.0,Netherlands,Store,PayPal
+401,1705,Small Business,507,Headphones,Audio,2026-03-07,5,150,15,637.5,Germany,Online,Cash
+402,1325,Enterprise,501,Laptop,Electronics,2026-04-24,3,1200,10,3240.0,USA,Marketplace,PayPal
+403,1355,Small Business,506,Desk,Furniture,2026-03-27,2,450,0,900.0,USA,Partner,Cash
+404,1255,Enterprise,501,Laptop,Electronics,2026-02-04,5,1200,0,6000.0,Netherlands,Partner,Credit Card
+405,1448,Enterprise,501,Laptop,Electronics,2026-08-03,1,1200,5,1140.0,Germany,Marketplace,Cash
+406,1384,Private,507,Headphones,Audio,2026-09-03,6,150,10,810.0,France,Store,Cash
+407,1020,Small Business,502,Monitor,Electronics,2026-05-14,1,300,0,300.0,USA,Online,Bank Transfer
+408,1749,Private,503,Keyboard,Accessories,2026-10-08,7,80,0,560.0,USA,Partner,Cash
+409,1168,Enterprise,501,Laptop,Electronics,2026-08-11,7,1200,15,7140.0,Germany,Online,Credit Card
+410,1419,Enterprise,506,Desk,Furniture,2026-10-11,4,450,0,1800.0,United Kingdom,Partner,Bank Transfer
+411,1402,Enterprise,504,Mouse,Accessories,2026-10-09,2,40,0,80.0,Italy,Store,Credit Card
+412,1089,Small Business,506,Desk,Furniture,2026-12-05,1,450,5,427.5,Italy,Store,Credit Card
+413,1653,Small Business,501,Laptop,Electronics,2026-02-11,4,1200,0,4800.0,Italy,Online,Bank Transfer
+414,1916,Enterprise,507,Headphones,Audio,2026-05-16,8,150,5,1140.0,USA,Marketplace,PayPal
+415,1191,Small Business,506,Desk,Furniture,2026-01-23,7,450,0,3150.0,United Kingdom,Marketplace,Cash
+416,1577,Private,505,Office Chair,Furniture,2026-03-19,4,250,0,1000.0,USA,Online,Bank Transfer
+417,1566,Private,507,Headphones,Audio,2026-07-18,10,150,0,1500.0,Spain,Marketplace,PayPal
+418,1404,Enterprise,508,Webcam,Accessories,2026-01-18,5,110,0,550.0,Germany,Online,Cash
+419,1827,Private,503,Keyboard,Accessories,2026-03-06,3,80,0,240.0,Israel,Marketplace,Credit Card
+420,1151,Enterprise,507,Headphones,Audio,2026-05-13,4,150,15,510.0,Netherlands,Online,Credit Card
+421,1565,Small Business,507,Headphones,Audio,2026-05-22,9,150,5,1282.5,Italy,Online,Cash
+422,1151,Enterprise,502,Monitor,Electronics,2026-10-29,7,300,0,2100.0,USA,Online,Credit Card
+423,1898,Small Business,505,Office Chair,Furniture,2026-05-16,9,250,0,2250.0,Spain,Marketplace,Cash
+424,1412,Private,501,Laptop,Electronics,2026-11-13,3,1200,0,3600.0,Spain,Online,Cash
+425,1763,Small Business,506,Desk,Furniture,2026-05-18,4,450,0,1800.0,Netherlands,Online,Bank Transfer
+426,1863,Small Business,505,Office Chair,Furniture,2026-12-23,5,250,0,1250.0,USA,Store,PayPal
+427,1275,Enterprise,505,Office Chair,Furniture,2026-08-02,8,250,0,2000.0,USA,Store,Cash
+428,1496,Enterprise,504,Mouse,Accessories,2026-07-11,7,40,15,238.0,Israel,Store,Credit Card
+429,1138,Enterprise,505,Office Chair,Furniture,2026-10-19,9,250,5,2137.5,Israel,Store,PayPal
+430,1033,Small Business,504,Mouse,Accessories,2026-01-26,1,40,0,40.0,Netherlands,Store,Bank Transfer
+431,1406,Enterprise,506,Desk,Furniture,2026-03-05,8,450,10,3240.0,Israel,Store,Bank Transfer
+432,1181,Small Business,508,Webcam,Accessories,2026-10-28,10,110,5,1045.0,Netherlands,Partner,PayPal
+433,1028,Small Business,505,Office Chair,Furniture,2026-01-26,2,250,0,500.0,Germany,Store,PayPal
+434,1667,Small Business,504,Mouse,Accessories,2026-09-20,4,40,0,160.0,Israel,Online,Cash
+435,1820,Private,503,Keyboard,Accessories,2026-04-25,3,80,10,216.0,United Kingdom,Partner,Bank Transfer
+436,1470,Small Business,507,Headphones,Audio,2026-04-22,7,150,0,1050.0,Italy,Partner,Cash
+437,1678,Small Business,502,Monitor,Electronics,2026-10-15,1,300,10,270.0,United Kingdom,Partner,Credit Card
+438,1283,Enterprise,508,Webcam,Accessories,2026-06-16,2,110,0,220.0,United Kingdom,Partner,Bank Transfer
+439,1783,Private,504,Mouse,Accessories,2026-01-30,3,40,10,108.0,Spain,Partner,PayPal
+440,1265,Small Business,501,Laptop,Electronics,2026-07-27,8,1200,0,9600.0,Spain,Online,PayPal
+441,1547,Enterprise,506,Desk,Furniture,2026-09-01,4,450,15,1530.0,Netherlands,Partner,PayPal
+442,1482,Private,503,Keyboard,Accessories,2026-05-13,5,80,0,400.0,Germany,Partner,Credit Card
+443,1762,Small Business,504,Mouse,Accessories,2026-08-04,6,40,0,240.0,Netherlands,Partner,Bank Transfer
+444,1481,Private,505,Office Chair,Furniture,2026-11-21,8,250,0,2000.0,USA,Marketplace,PayPal
+445,1305,Small Business,502,Monitor,Electronics,2026-01-28,7,300,10,1890.0,Germany,Store,PayPal
+446,1914,Small Business,506,Desk,Furniture,2026-03-15,7,450,10,2835.0,Netherlands,Store,Credit Card
+447,1181,Small Business,508,Webcam,Accessories,2026-11-21,6,110,15,561.0,Israel,Online,Cash
+448,1590,Private,505,Office Chair,Furniture,2026-09-08,4,250,0,1000.0,USA,Store,Cash
+449,1988,Small Business,507,Headphones,Audio,2026-07-16,7,150,5,997.5,Israel,Online,PayPal
+450,1775,Enterprise,506,Desk,Furniture,2026-04-08,1,450,0,450.0,Israel,Online,PayPal
+451,1132,Private,504,Mouse,Accessories,2026-07-16,6,40,0,240.0,United Kingdom,Store,Credit Card
+452,1466,Enterprise,501,Laptop,Electronics,2026-09-24,5,1200,0,6000.0,Netherlands,Marketplace,PayPal
+453,1768,Private,506,Desk,Furniture,2026-03-26,8,450,0,3600.0,Spain,Online,PayPal
+454,1751,Private,504,Mouse,Accessories,2026-10-29,3,40,0,120.0,Germany,Online,Bank Transfer
+455,1261,Enterprise,501,Laptop,Electronics,2026-11-16,7,1200,15,7140.0,Israel,Online,Credit Card
+456,1118,Small Business,501,Laptop,Electronics,2026-08-16,1,1200,15,1020.0,Spain,Online,Bank Transfer
+457,1711,Enterprise,508,Webcam,Accessories,2026-11-19,3,110,0,330.0,Israel,Partner,Cash
+458,1637,Enterprise,502,Monitor,Electronics,2026-12-25,9,300,0,2700.0,Germany,Marketplace,Credit Card
+459,1803,Private,502,Monitor,Electronics,2026-09-12,5,300,0,1500.0,France,Store,Bank Transfer
+460,1419,Small Business,504,Mouse,Accessories,2026-03-24,6,40,15,204.0,Israel,Marketplace,PayPal
+461,1002,Private,508,Webcam,Accessories,2026-12-10,6,110,0,660.0,USA,Online,Cash
+462,1076,Enterprise,503,Keyboard,Accessories,2026-02-21,2,80,10,144.0,United Kingdom,Store,Cash
+463,1051,Private,505,Office Chair,Furniture,2026-03-31,5,250,5,1187.5,Israel,Partner,Bank Transfer
+464,1118,Private,506,Desk,Furniture,2026-01-24,7,450,15,2677.5,Israel,Store,PayPal
+465,1978,Enterprise,506,Desk,Furniture,2026-05-18,6,450,5,2565.0,USA,Partner,Bank Transfer
+466,1409,Small Business,503,Keyboard,Accessories,2026-05-20,2,80,5,152.0,Spain,Marketplace,Cash
+467,1712,Enterprise,503,Keyboard,Accessories,2026-01-31,2,80,0,160.0,Germany,Online,Cash
+468,1448,Private,508,Webcam,Accessories,2026-11-09,10,110,15,935.0,Spain,Partner,Credit Card
+469,1115,Small Business,503,Keyboard,Accessories,2026-08-14,8,80,5,608.0,Israel,Online,Bank Transfer
+470,1889,Enterprise,506,Desk,Furniture,2026-09-26,1,450,15,382.5,France,Partner,Credit Card
+471,1354,Enterprise,507,Headphones,Audio,2026-12-13,4,150,5,570.0,Spain,Store,Credit Card
+472,1869,Small Business,501,Laptop,Electronics,2026-09-11,3,1200,10,3240.0,Germany,Online,Cash
+473,1993,Small Business,506,Desk,Furniture,2026-01-26,4,450,0,1800.0,France,Marketplace,Cash
+474,1454,Enterprise,504,Mouse,Accessories,2026-08-18,2,40,5,76.0,USA,Marketplace,Cash
+475,1763,Enterprise,506,Desk,Furniture,2026-01-10,2,450,5,855.0,USA,Marketplace,Cash
+476,1000,Private,501,Laptop,Electronics,2026-11-06,9,1200,10,9720.0,United Kingdom,Store,Cash
+477,1836,Private,506,Desk,Furniture,2026-08-21,6,450,0,2700.0,Netherlands,Marketplace,Bank Transfer
+478,1777,Enterprise,508,Webcam,Accessories,2026-04-24,2,110,0,220.0,Israel,Partner,Bank Transfer
+479,1382,Enterprise,505,Office Chair,Furniture,2026-02-24,9,250,10,2025.0,Israel,Store,Cash
+480,1260,Enterprise,503,Keyboard,Accessories,2026-04-11,7,80,0,560.0,France,Online,Cash
+481,1733,Small Business,504,Mouse,Accessories,2026-02-25,8,40,0,320.0,Spain,Online,Credit Card
+482,1603,Enterprise,508,Webcam,Accessories,2026-03-10,8,110,15,748.0,Italy,Online,Credit Card
+483,1946,Enterprise,507,Headphones,Audio,2026-04-01,10,150,5,1425.0,Germany,Store,Credit Card
+484,1903,Small Business,507,Headphones,Audio,2026-09-16,10,150,10,1350.0,Spain,Marketplace,PayPal
+485,1993,Small Business,505,Office Chair,Furniture,2026-08-20,7,250,0,1750.0,Germany,Store,Cash
+486,1728,Enterprise,505,Office Chair,Furniture,2026-10-11,9,250,0,2250.0,France,Store,PayPal
+487,1135,Enterprise,505,Office Chair,Furniture,2026-11-29,6,250,15,1275.0,Germany,Partner,Credit Card
+488,1596,Enterprise,506,Desk,Furniture,2026-12-08,9,450,5,3847.5,Spain,Partner,Cash
+489,1025,Small Business,501,Laptop,Electronics,2026-03-16,9,1200,0,10800.0,Israel,Online,PayPal
+490,1699,Small Business,505,Office Chair,Furniture,2026-03-16,3,250,0,750.0,Israel,Partner,PayPal
+491,1104,Enterprise,501,Laptop,Electronics,2026-12-12,6,1200,5,6840.0,France,Marketplace,PayPal
+492,1396,Small Business,505,Office Chair,Furniture,2026-12-17,1,250,5,237.5,Netherlands,Online,Credit Card
+493,1889,Small Business,505,Office Chair,Furniture,2026-04-26,4,250,10,900.0,Netherlands,Store,PayPal
+494,1699,Private,505,Office Chair,Furniture,2026-04-06,8,250,0,2000.0,Germany,Online,Cash
+495,1569,Small Business,501,Laptop,Electronics,2026-03-08,7,1200,0,8400.0,Germany,Partner,Credit Card
+496,1959,Private,506,Desk,Furniture,2026-01-21,8,450,15,3060.0,Germany,Partner,Credit Card
+497,1563,Small Business,505,Office Chair,Furniture,2026-02-07,8,250,10,1800.0,Netherlands,Store,PayPal
+498,1425,Enterprise,502,Monitor,Electronics,2026-10-02,9,300,0,2700.0,Spain,Online,Bank Transfer
+499,1339,Small Business,504,Mouse,Accessories,2026-07-04,4,40,15,136.0,United Kingdom,Store,Cash
+500,1354,Small Business,501,Laptop,Electronics,2026-05-04,2,1200,15,2040.0,France,Online,Bank Transfer
+501,1262,Enterprise,507,Headphones,Audio,2026-05-25,2,150,5,285.0,Israel,Partner,Cash
+502,1919,Enterprise,508,Webcam,Accessories,2026-04-09,1,110,0,110.0,Netherlands,Online,Credit Card
+503,1007,Enterprise,503,Keyboard,Accessories,2026-02-03,9,80,10,648.0,France,Store,Cash
+504,1848,Enterprise,502,Monitor,Electronics,2026-08-11,4,300,10,1080.0,USA,Store,Credit Card
+505,1089,Private,508,Webcam,Accessories,2026-01-28,6,110,0,660.0,Germany,Partner,Credit Card
+506,1397,Small Business,504,Mouse,Accessories,2026-11-19,5,40,5,190.0,Spain,Marketplace,Bank Transfer
+507,1121,Enterprise,501,Laptop,Electronics,2026-01-04,7,1200,15,7140.0,USA,Online,Credit Card
+508,1296,Enterprise,506,Desk,Furniture,2026-06-04,9,450,0,4050.0,USA,Partner,Cash
+509,1031,Small Business,507,Headphones,Audio,2026-03-22,7,150,15,892.5,France,Store,Cash
+510,1693,Enterprise,505,Office Chair,Furniture,2026-11-28,3,250,0,750.0,Netherlands,Online,PayPal
+511,1586,Enterprise,502,Monitor,Electronics,2026-07-21,1,300,0,300.0,USA,Partner,PayPal
+512,1927,Enterprise,506,Desk,Furniture,2026-09-20,4,450,5,1710.0,Germany,Store,PayPal
+513,1198,Private,504,Mouse,Accessories,2026-04-03,10,40,0,400.0,Israel,Marketplace,Credit Card
+514,1100,Private,505,Office Chair,Furniture,2026-10-25,2,250,0,500.0,Italy,Partner,Bank Transfer
+515,1291,Enterprise,503,Keyboard,Accessories,2026-02-05,4,80,0,320.0,France,Partner,Cash
+516,1675,Small Business,508,Webcam,Accessories,2026-12-22,6,110,10,594.0,Germany,Partner,Bank Transfer
+517,1320,Private,507,Headphones,Audio,2026-04-24,3,150,0,450.0,Spain,Partner,Bank Transfer
+518,1473,Small Business,503,Keyboard,Accessories,2026-07-03,6,80,5,456.0,United Kingdom,Marketplace,Credit Card
+519,1861,Small Business,503,Keyboard,Accessories,2026-03-13,10,80,0,800.0,France,Partner,Credit Card
+520,1646,Private,502,Monitor,Electronics,2026-10-25,1,300,10,270.0,Spain,Store,Credit Card
+521,1483,Enterprise,505,Office Chair,Furniture,2026-03-18,9,250,10,2025.0,Netherlands,Marketplace,PayPal
+522,1513,Enterprise,505,Office Chair,Furniture,2026-02-16,3,250,5,712.5,Spain,Partner,Credit Card
+523,1169,Enterprise,504,Mouse,Accessories,2026-03-13,10,40,15,340.0,Italy,Store,PayPal
+524,1041,Private,503,Keyboard,Accessories,2026-09-07,8,80,0,640.0,France,Online,Bank Transfer
+525,1684,Private,506,Desk,Furniture,2026-09-23,4,450,0,1800.0,Netherlands,Marketplace,Cash
+526,1664,Small Business,508,Webcam,Accessories,2026-02-22,1,110,0,110.0,United Kingdom,Partner,PayPal
+527,1601,Enterprise,507,Headphones,Audio,2026-02-09,7,150,0,1050.0,United Kingdom,Marketplace,PayPal
+528,1498,Small Business,507,Headphones,Audio,2026-11-06,6,150,0,900.0,Israel,Store,Cash
+529,1526,Enterprise,503,Keyboard,Accessories,2026-05-24,4,80,0,320.0,France,Store,PayPal
+530,1734,Private,503,Keyboard,Accessories,2026-12-05,6,80,10,432.0,France,Marketplace,Bank Transfer
+531,1490,Small Business,502,Monitor,Electronics,2026-04-18,8,300,15,2040.0,Germany,Marketplace,Credit Card
+532,1587,Enterprise,504,Mouse,Accessories,2026-03-24,1,40,0,40.0,Germany,Online,PayPal
+533,1944,Private,501,Laptop,Electronics,2026-09-22,3,1200,0,3600.0,Spain,Online,Bank Transfer
+534,1621,Small Business,502,Monitor,Electronics,2026-09-04,4,300,5,1140.0,Germany,Store,Cash
+535,1638,Enterprise,503,Keyboard,Accessories,2026-09-19,10,80,0,800.0,United Kingdom,Store,Bank Transfer
+536,1070,Private,508,Webcam,Accessories,2026-07-13,10,110,10,990.0,Spain,Store,Credit Card
+537,1880,Enterprise,501,Laptop,Electronics,2026-12-17,4,1200,10,4320.0,Spain,Store,Credit Card
+538,1614,Private,503,Keyboard,Accessories,2026-09-30,8,80,10,576.0,USA,Online,Cash
+539,1847,Private,503,Keyboard,Accessories,2026-12-14,10,80,10,720.0,Spain,Marketplace,Bank Transfer
+540,1234,Small Business,501,Laptop,Electronics,2026-07-15,9,1200,5,10260.0,Netherlands,Online,Cash
+541,1784,Private,503,Keyboard,Accessories,2026-02-12,5,80,5,380.0,United Kingdom,Marketplace,Bank Transfer
+542,1761,Private,504,Mouse,Accessories,2026-10-23,1,40,15,34.0,USA,Online,Cash
+543,1370,Private,504,Mouse,Accessories,2026-03-21,6,40,5,228.0,Spain,Partner,Bank Transfer
+544,1626,Small Business,507,Headphones,Audio,2026-12-15,10,150,0,1500.0,Spain,Store,Cash
+545,1572,Enterprise,508,Webcam,Accessories,2026-09-05,3,110,0,330.0,United Kingdom,Partner,Bank Transfer
+546,1121,Enterprise,507,Headphones,Audio,2026-04-28,3,150,15,382.5,Italy,Store,Credit Card
+547,1804,Small Business,504,Mouse,Accessories,2026-10-09,9,40,5,342.0,Israel,Store,Cash
+548,1482,Enterprise,501,Laptop,Electronics,2026-08-11,2,1200,0,2400.0,USA,Online,Bank Transfer
+549,1623,Private,504,Mouse,Accessories,2026-07-16,6,40,0,240.0,Spain,Partner,Credit Card
+550,1010,Private,503,Keyboard,Accessories,2026-12-03,8,80,5,608.0,United Kingdom,Store,Credit Card
+551,1690,Private,504,Mouse,Accessories,2026-07-04,10,40,0,400.0,France,Online,PayPal
+552,1361,Enterprise,502,Monitor,Electronics,2026-07-22,5,300,5,1425.0,Spain,Store,Credit Card
+553,1291,Enterprise,502,Monitor,Electronics,2026-10-14,2,300,10,540.0,Netherlands,Partner,Bank Transfer
+554,1465,Small Business,504,Mouse,Accessories,2026-10-22,10,40,0,400.0,Israel,Partner,PayPal
+555,1572,Private,507,Headphones,Audio,2026-09-15,9,150,0,1350.0,United Kingdom,Partner,Credit Card
+556,1256,Enterprise,505,Office Chair,Furniture,2026-08-15,9,250,10,2025.0,Spain,Marketplace,PayPal
+557,1471,Enterprise,506,Desk,Furniture,2026-01-15,8,450,15,3060.0,Italy,Online,Bank Transfer
+558,1807,Private,502,Monitor,Electronics,2026-12-13,7,300,15,1785.0,France,Partner,Cash
+559,1009,Enterprise,506,Desk,Furniture,2026-05-15,9,450,10,3645.0,France,Partner,Credit Card
+560,1567,Private,507,Headphones,Audio,2026-09-01,6,150,0,900.0,Netherlands,Partner,PayPal
+561,1699,Private,505,Office Chair,Furniture,2026-09-13,3,250,15,637.5,France,Store,PayPal
+562,1207,Private,505,Office Chair,Furniture,2026-11-13,4,250,0,1000.0,Netherlands,Store,Credit Card
+563,1978,Enterprise,502,Monitor,Electronics,2026-09-10,2,300,15,510.0,Israel,Online,Cash
+564,1504,Enterprise,506,Desk,Furniture,2026-05-21,10,450,0,4500.0,Italy,Store,Bank Transfer
+565,1131,Private,507,Headphones,Audio,2026-09-27,4,150,10,540.0,Spain,Marketplace,Credit Card
+566,1794,Private,506,Desk,Furniture,2026-08-23,7,450,15,2677.5,USA,Marketplace,Bank Transfer
+567,1215,Small Business,501,Laptop,Electronics,2026-10-25,1,1200,15,1020.0,USA,Partner,Bank Transfer
+568,1269,Private,505,Office Chair,Furniture,2026-05-18,3,250,10,675.0,Italy,Partner,Bank Transfer
+569,1215,Small Business,503,Keyboard,Accessories,2026-12-25,8,80,5,608.0,Netherlands,Partner,Cash
+570,1585,Private,505,Office Chair,Furniture,2026-10-22,8,250,0,2000.0,France,Online,Bank Transfer
+571,1876,Small Business,504,Mouse,Accessories,2026-04-11,9,40,5,342.0,Germany,Store,Cash
+572,1511,Private,501,Laptop,Electronics,2026-11-19,3,1200,5,3420.0,Netherlands,Marketplace,Bank Transfer
+573,1048,Small Business,505,Office Chair,Furniture,2026-02-20,9,250,10,2025.0,Germany,Online,PayPal
+574,1098,Small Business,505,Office Chair,Furniture,2026-06-21,8,250,15,1700.0,United Kingdom,Partner,Bank Transfer
+575,1421,Private,505,Office Chair,Furniture,2026-06-29,6,250,0,1500.0,France,Store,Bank Transfer
+576,1522,Small Business,506,Desk,Furniture,2026-08-17,6,450,15,2295.0,USA,Marketplace,Bank Transfer
+577,1655,Small Business,508,Webcam,Accessories,2026-08-04,3,110,0,330.0,Spain,Online,Credit Card
+578,1321,Small Business,503,Keyboard,Accessories,2026-12-01,6,80,0,480.0,United Kingdom,Partner,Cash
+579,1765,Enterprise,505,Office Chair,Furniture,2026-09-24,8,250,0,2000.0,Italy,Marketplace,PayPal
+580,1745,Private,503,Keyboard,Accessories,2026-12-05,1,80,0,80.0,United Kingdom,Online,PayPal
+581,1097,Private,503,Keyboard,Accessories,2026-08-31,7,80,0,560.0,Israel,Online,Cash
+582,1632,Private,502,Monitor,Electronics,2026-02-13,2,300,0,600.0,Spain,Partner,PayPal
+583,1641,Private,504,Mouse,Accessories,2026-03-09,5,40,5,190.0,Germany,Online,Credit Card
+584,1478,Enterprise,506,Desk,Furniture,2026-05-20,6,450,5,2565.0,Italy,Store,PayPal
+585,1536,Enterprise,508,Webcam,Accessories,2026-11-24,10,110,5,1045.0,United Kingdom,Partner,Cash
+586,1315,Small Business,504,Mouse,Accessories,2026-07-31,2,40,5,76.0,United Kingdom,Store,Bank Transfer
+587,1834,Private,501,Laptop,Electronics,2026-06-26,1,1200,10,1080.0,United Kingdom,Marketplace,Credit Card
+588,1009,Small Business,508,Webcam,Accessories,2026-05-30,8,110,0,880.0,France,Online,Bank Transfer
+589,1447,Small Business,504,Mouse,Accessories,2026-05-08,7,40,10,252.0,Germany,Marketplace,Cash
+590,1432,Enterprise,504,Mouse,Accessories,2026-05-03,5,40,0,200.0,United Kingdom,Partner,Bank Transfer
+591,1186,Private,507,Headphones,Audio,2026-05-29,4,150,0,600.0,USA,Marketplace,Cash
+592,1192,Small Business,505,Office Chair,Furniture,2026-01-10,10,250,5,2375.0,Germany,Online,Credit Card
+593,1275,Private,503,Keyboard,Accessories,2026-08-13,2,80,0,160.0,Israel,Store,Credit Card
+594,1222,Small Business,503,Keyboard,Accessories,2026-08-04,1,80,5,76.0,United Kingdom,Marketplace,Bank Transfer
+595,1082,Private,508,Webcam,Accessories,2026-01-29,1,110,0,110.0,United Kingdom,Marketplace,Credit Card
+596,1917,Small Business,508,Webcam,Accessories,2026-07-15,3,110,0,330.0,Israel,Online,PayPal
+597,1755,Private,507,Headphones,Audio,2026-04-12,8,150,0,1200.0,Italy,Online,PayPal
+598,1984,Small Business,508,Webcam,Accessories,2026-06-15,7,110,15,654.5,Germany,Online,Credit Card
+599,1305,Private,505,Office Chair,Furniture,2026-07-04,8,250,15,1700.0,Israel,Store,Credit Card
+600,1015,Private,504,Mouse,Accessories,2026-05-22,7,40,0,280.0,USA,Marketplace,PayPal
+601,1802,Enterprise,501,Laptop,Electronics,2026-09-01,1,1200,10,1080.0,Germany,Partner,Credit Card
+602,1093,Enterprise,504,Mouse,Accessories,2026-11-13,3,40,5,114.0,Netherlands,Online,Credit Card
+603,1549,Private,506,Desk,Furniture,2026-03-06,3,450,15,1147.5,Italy,Store,Bank Transfer
+604,1197,Private,506,Desk,Furniture,2026-12-19,8,450,15,3060.0,Spain,Partner,PayPal
+605,1723,Small Business,505,Office Chair,Furniture,2026-10-14,1,250,5,237.5,United Kingdom,Marketplace,PayPal
+606,1331,Enterprise,503,Keyboard,Accessories,2026-08-28,9,80,0,720.0,United Kingdom,Store,Credit Card
+607,1839,Small Business,503,Keyboard,Accessories,2026-10-05,8,80,0,640.0,Netherlands,Marketplace,Credit Card
+608,1634,Small Business,507,Headphones,Audio,2026-11-14,3,150,0,450.0,France,Partner,Credit Card
+609,1699,Small Business,507,Headphones,Audio,2026-10-10,4,150,10,540.0,Germany,Partner,Bank Transfer
+610,1098,Enterprise,507,Headphones,Audio,2026-12-04,6,150,0,900.0,USA,Online,PayPal
+611,1109,Small Business,503,Keyboard,Accessories,2026-04-09,1,80,0,80.0,USA,Online,Cash
+612,1718,Enterprise,508,Webcam,Accessories,2026-05-12,9,110,10,891.0,Israel,Partner,PayPal
+613,1671,Small Business,502,Monitor,Electronics,2026-02-10,1,300,0,300.0,Italy,Online,Bank Transfer
+614,1059,Enterprise,507,Headphones,Audio,2026-05-17,6,150,15,765.0,Israel,Online,Bank Transfer
+615,1099,Private,502,Monitor,Electronics,2026-04-29,4,300,10,1080.0,Spain,Store,PayPal
+616,1970,Private,504,Mouse,Accessories,2026-10-13,10,40,15,340.0,Spain,Online,Bank Transfer
+617,1170,Private,508,Webcam,Accessories,2026-10-09,7,110,0,770.0,Spain,Partner,PayPal
+618,1563,Small Business,508,Webcam,Accessories,2026-07-10,6,110,0,660.0,Spain,Marketplace,Bank Transfer
+619,1219,Small Business,504,Mouse,Accessories,2026-10-09,10,40,10,360.0,United Kingdom,Partner,Cash
+620,1743,Private,508,Webcam,Accessories,2026-05-26,7,110,0,770.0,Israel,Store,Bank Transfer
+621,1219,Small Business,501,Laptop,Electronics,2026-01-12,5,1200,0,6000.0,United Kingdom,Store,Credit Card
+622,1159,Private,501,Laptop,Electronics,2026-05-16,8,1200,0,9600.0,Netherlands,Store,PayPal
+623,1584,Small Business,505,Office Chair,Furniture,2026-10-19,5,250,0,1250.0,France,Online,Bank Transfer
+624,1845,Enterprise,508,Webcam,Accessories,2026-12-26,3,110,5,313.5,USA,Partner,Credit Card
+625,1943,Small Business,507,Headphones,Audio,2026-06-28,2,150,0,300.0,Spain,Marketplace,Credit Card
+626,1649,Enterprise,504,Mouse,Accessories,2026-07-15,10,40,0,400.0,Israel,Partner,Credit Card
+627,1153,Small Business,506,Desk,Furniture,2026-09-15,9,450,10,3645.0,France,Store,Credit Card
+628,1589,Enterprise,507,Headphones,Audio,2026-02-16,8,150,10,1080.0,France,Marketplace,Bank Transfer
+629,1344,Private,507,Headphones,Audio,2026-09-01,3,150,0,450.0,Israel,Marketplace,Bank Transfer
+630,1444,Enterprise,502,Monitor,Electronics,2026-03-08,7,300,10,1890.0,Germany,Marketplace,PayPal
+631,1585,Private,508,Webcam,Accessories,2026-10-15,7,110,15,654.5,France,Store,Credit Card
+632,1701,Enterprise,505,Office Chair,Furniture,2026-02-15,7,250,0,1750.0,USA,Marketplace,Cash
+633,1328,Small Business,506,Desk,Furniture,2026-11-01,6,450,0,2700.0,Israel,Partner,PayPal
+634,1638,Private,506,Desk,Furniture,2026-08-14,10,450,5,4275.0,Israel,Store,PayPal
+635,1873,Private,506,Desk,Furniture,2026-02-27,3,450,15,1147.5,Israel,Store,PayPal
+636,1710,Private,505,Office Chair,Furniture,2026-06-06,1,250,0,250.0,Italy,Marketplace,Credit Card
+637,1550,Private,506,Desk,Furniture,2026-04-15,4,450,15,1530.0,United Kingdom,Marketplace,PayPal
+638,1927,Enterprise,501,Laptop,Electronics,2026-09-27,7,1200,10,7560.0,Israel,Partner,PayPal
+639,1808,Enterprise,501,Laptop,Electronics,2026-11-13,5,1200,0,6000.0,United Kingdom,Online,Cash
+640,1676,Small Business,501,Laptop,Electronics,2026-12-06,2,1200,5,2280.0,Netherlands,Online,Credit Card
+641,1389,Enterprise,505,Office Chair,Furniture,2026-12-30,7,250,0,1750.0,USA,Partner,Cash
+642,1512,Small Business,502,Monitor,Electronics,2026-10-15,3,300,0,900.0,Israel,Online,PayPal
+643,1402,Enterprise,505,Office Chair,Furniture,2026-03-22,6,250,5,1425.0,Israel,Partner,Bank Transfer
+644,1513,Small Business,506,Desk,Furniture,2026-02-01,5,450,0,2250.0,United Kingdom,Marketplace,Credit Card
+645,1349,Small Business,505,Office Chair,Furniture,2026-12-03,4,250,0,1000.0,Germany,Online,Cash
+646,1586,Private,504,Mouse,Accessories,2026-08-07,7,40,0,280.0,United Kingdom,Partner,Cash
+647,1141,Enterprise,503,Keyboard,Accessories,2026-10-05,4,80,15,272.0,France,Store,Bank Transfer
+648,1671,Enterprise,503,Keyboard,Accessories,2026-03-22,7,80,0,560.0,Netherlands,Online,Credit Card
+649,1744,Private,503,Keyboard,Accessories,2026-06-13,6,80,0,480.0,Spain,Marketplace,Bank Transfer
+650,1797,Private,508,Webcam,Accessories,2026-02-24,5,110,0,550.0,Germany,Store,Credit Card
+651,1627,Private,505,Office Chair,Furniture,2026-11-02,10,250,10,2250.0,France,Store,Credit Card
+652,1798,Small Business,506,Desk,Furniture,2026-03-10,2,450,15,765.0,Italy,Partner,PayPal
+653,1140,Private,507,Headphones,Audio,2026-04-09,8,150,5,1140.0,France,Online,Cash
+654,1227,Enterprise,501,Laptop,Electronics,2026-12-10,5,1200,5,5700.0,France,Store,Credit Card
+655,1501,Enterprise,503,Keyboard,Accessories,2026-06-16,8,80,10,576.0,Italy,Store,Cash
+656,1752,Small Business,507,Headphones,Audio,2026-06-10,1,150,10,135.0,Spain,Online,Credit Card
+657,1898,Private,508,Webcam,Accessories,2026-09-23,8,110,0,880.0,Spain,Online,Cash
+658,1450,Small Business,501,Laptop,Electronics,2026-06-05,4,1200,0,4800.0,United Kingdom,Marketplace,PayPal
+659,1941,Private,507,Headphones,Audio,2026-12-20,5,150,10,675.0,Germany,Marketplace,Cash
+660,1184,Enterprise,502,Monitor,Electronics,2026-12-23,9,300,0,2700.0,Germany,Marketplace,Cash
+661,1183,Small Business,506,Desk,Furniture,2026-10-30,8,450,0,3600.0,France,Marketplace,Credit Card
+662,1664,Enterprise,505,Office Chair,Furniture,2026-03-25,6,250,15,1275.0,USA,Online,Credit Card
+663,1536,Enterprise,508,Webcam,Accessories,2026-07-16,6,110,0,660.0,Germany,Marketplace,Cash
+664,1579,Enterprise,501,Laptop,Electronics,2026-03-18,3,1200,0,3600.0,Germany,Store,PayPal
+665,1316,Enterprise,501,Laptop,Electronics,2026-08-17,7,1200,0,8400.0,United Kingdom,Store,Credit Card
+666,1637,Small Business,503,Keyboard,Accessories,2026-01-07,4,80,0,320.0,Italy,Marketplace,Cash
+667,1243,Private,501,Laptop,Electronics,2026-10-29,10,1200,5,11400.0,Italy,Marketplace,Cash
+668,1614,Private,508,Webcam,Accessories,2026-05-06,2,110,10,198.0,United Kingdom,Store,Credit Card
+669,1668,Small Business,503,Keyboard,Accessories,2026-01-19,3,80,0,240.0,Germany,Online,Bank Transfer
+670,1111,Small Business,506,Desk,Furniture,2026-04-02,2,450,0,900.0,Germany,Partner,PayPal
+671,1953,Private,508,Webcam,Accessories,2026-02-17,10,110,0,1100.0,United Kingdom,Partner,Bank Transfer
+672,1863,Enterprise,507,Headphones,Audio,2026-02-03,2,150,5,285.0,United Kingdom,Marketplace,PayPal
+673,1539,Small Business,502,Monitor,Electronics,2026-09-26,5,300,0,1500.0,France,Store,Credit Card
+674,1644,Enterprise,502,Monitor,Electronics,2026-02-14,10,300,15,2550.0,Italy,Partner,Cash
+675,1588,Enterprise,506,Desk,Furniture,2026-07-01,5,450,10,2025.0,Germany,Marketplace,Cash
+676,1238,Enterprise,508,Webcam,Accessories,2026-05-29,3,110,10,297.0,France,Online,Credit Card
+677,1815,Private,501,Laptop,Electronics,2026-04-17,8,1200,15,8160.0,Spain,Marketplace,Credit Card
+678,1825,Enterprise,506,Desk,Furniture,2026-04-19,6,450,10,2430.0,Israel,Store,Bank Transfer
+679,1307,Enterprise,505,Office Chair,Furniture,2026-10-09,2,250,0,500.0,Netherlands,Online,Credit Card
+680,1741,Enterprise,506,Desk,Furniture,2026-11-12,6,450,5,2565.0,Israel,Store,PayPal
+681,1490,Small Business,506,Desk,Furniture,2026-01-19,6,450,15,2295.0,Germany,Marketplace,PayPal
+682,1473,Small Business,508,Webcam,Accessories,2026-01-29,9,110,0,990.0,United Kingdom,Partner,Credit Card
+683,1339,Small Business,504,Mouse,Accessories,2026-02-03,10,40,15,340.0,Germany,Partner,Credit Card
+684,1547,Private,506,Desk,Furniture,2026-10-20,7,450,15,2677.5,Spain,Store,Credit Card
+685,1032,Small Business,505,Office Chair,Furniture,2026-07-31,6,250,15,1275.0,USA,Marketplace,PayPal
+686,1221,Enterprise,506,Desk,Furniture,2026-06-04,8,450,0,3600.0,Germany,Online,Bank Transfer
+687,1454,Enterprise,501,Laptop,Electronics,2026-01-13,4,1200,0,4800.0,Italy,Store,PayPal
+688,1894,Enterprise,506,Desk,Furniture,2026-06-08,8,450,15,3060.0,Netherlands,Store,Credit Card
+689,1037,Small Business,503,Keyboard,Accessories,2026-07-18,4,80,15,272.0,USA,Online,Bank Transfer
+690,1341,Small Business,501,Laptop,Electronics,2026-01-24,10,1200,0,12000.0,USA,Partner,Credit Card
+691,1205,Private,505,Office Chair,Furniture,2026-05-27,4,250,0,1000.0,United Kingdom,Partner,Cash
+692,1161,Small Business,502,Monitor,Electronics,2026-02-28,5,300,0,1500.0,Israel,Online,PayPal
+693,1277,Private,506,Desk,Furniture,2026-12-27,9,450,0,4050.0,United Kingdom,Store,PayPal
+694,1913,Small Business,502,Monitor,Electronics,2026-10-04,5,300,10,1350.0,Italy,Online,PayPal
+695,1051,Private,501,Laptop,Electronics,2026-07-16,8,1200,15,8160.0,Israel,Online,Cash
+696,1610,Enterprise,507,Headphones,Audio,2026-11-19,3,150,15,382.5,Italy,Partner,Bank Transfer
+697,1776,Enterprise,506,Desk,Furniture,2026-10-01,4,450,15,1530.0,USA,Marketplace,PayPal
+698,1466,Small Business,502,Monitor,Electronics,2026-12-17,8,300,0,2400.0,Italy,Marketplace,PayPal
+699,1264,Small Business,504,Mouse,Accessories,2026-07-20,3,40,10,108.0,Germany,Partner,Bank Transfer
+700,1066,Small Business,508,Webcam,Accessories,2026-02-27,8,110,0,880.0,Netherlands,Marketplace,Cash
+701,1618,Enterprise,503,Keyboard,Accessories,2026-03-07,5,80,0,400.0,USA,Marketplace,Credit Card
+702,1072,Small Business,506,Desk,Furniture,2026-09-30,9,450,15,3442.5,Italy,Marketplace,Cash
+703,1561,Private,504,Mouse,Accessories,2026-09-04,10,40,0,400.0,Spain,Online,Bank Transfer
+704,1803,Small Business,504,Mouse,Accessories,2026-10-18,10,40,5,380.0,Netherlands,Store,PayPal
+705,1117,Enterprise,502,Monitor,Electronics,2026-11-02,10,300,5,2850.0,Italy,Partner,Credit Card
+706,1978,Small Business,508,Webcam,Accessories,2026-02-05,3,110,0,330.0,USA,Marketplace,Bank Transfer
+707,1222,Private,508,Webcam,Accessories,2026-10-25,1,110,0,110.0,Israel,Store,PayPal
+708,1399,Enterprise,508,Webcam,Accessories,2026-10-23,9,110,0,990.0,Italy,Store,PayPal
+709,1813,Enterprise,506,Desk,Furniture,2026-06-05,5,450,10,2025.0,Spain,Partner,Credit Card
+710,1413,Private,501,Laptop,Electronics,2026-05-31,10,1200,10,10800.0,Israel,Partner,Credit Card
+711,1112,Small Business,501,Laptop,Electronics,2026-01-16,9,1200,0,10800.0,France,Marketplace,Cash
+712,1390,Small Business,506,Desk,Furniture,2026-10-07,7,450,5,2992.5,France,Store,Cash
+713,1393,Small Business,503,Keyboard,Accessories,2026-08-02,4,80,10,288.0,Germany,Partner,PayPal
+714,1663,Private,503,Keyboard,Accessories,2026-03-15,1,80,0,80.0,Italy,Marketplace,PayPal
+715,1825,Small Business,502,Monitor,Electronics,2026-08-22,3,300,15,765.0,Spain,Store,Cash
+716,1393,Small Business,507,Headphones,Audio,2026-04-26,9,150,5,1282.5,Germany,Marketplace,Credit Card
+717,1513,Small Business,508,Webcam,Accessories,2026-07-30,4,110,15,374.0,Netherlands,Online,Credit Card
+718,1594,Small Business,508,Webcam,Accessories,2026-12-20,6,110,0,660.0,USA,Store,Bank Transfer
+719,1535,Enterprise,508,Webcam,Accessories,2026-02-15,9,110,0,990.0,France,Marketplace,Credit Card
+720,1925,Small Business,505,Office Chair,Furniture,2026-10-01,10,250,0,2500.0,Israel,Marketplace,Cash
+721,1339,Small Business,508,Webcam,Accessories,2026-06-30,10,110,15,935.0,United Kingdom,Partner,PayPal
+722,1311,Enterprise,501,Laptop,Electronics,2026-10-16,10,1200,15,10200.0,United Kingdom,Online,Cash
+723,1672,Small Business,503,Keyboard,Accessories,2026-11-16,10,80,0,800.0,Israel,Partner,Cash
+724,1078,Small Business,502,Monitor,Electronics,2026-05-10,3,300,10,810.0,Germany,Partner,Bank Transfer
+725,1114,Enterprise,505,Office Chair,Furniture,2026-03-31,1,250,15,212.5,Germany,Marketplace,Bank Transfer
+726,1241,Small Business,503,Keyboard,Accessories,2026-04-03,5,80,15,340.0,Israel,Partner,Credit Card
+727,1857,Small Business,503,Keyboard,Accessories,2026-07-31,10,80,0,800.0,Spain,Store,Cash
+728,1751,Small Business,503,Keyboard,Accessories,2026-01-28,4,80,10,288.0,United Kingdom,Online,Credit Card
+729,1487,Small Business,503,Keyboard,Accessories,2026-09-01,8,80,5,608.0,France,Marketplace,Cash
+730,1543,Small Business,508,Webcam,Accessories,2026-01-07,5,110,0,550.0,United Kingdom,Marketplace,Cash
+731,1978,Private,506,Desk,Furniture,2026-02-19,9,450,15,3442.5,Netherlands,Marketplace,Bank Transfer
+732,1821,Private,506,Desk,Furniture,2026-05-11,5,450,0,2250.0,Spain,Marketplace,PayPal
+733,1693,Enterprise,504,Mouse,Accessories,2026-04-03,9,40,0,360.0,Netherlands,Online,Credit Card
+734,1100,Enterprise,502,Monitor,Electronics,2026-02-23,1,300,5,285.0,Italy,Partner,PayPal
+735,1034,Private,505,Office Chair,Furniture,2026-11-14,5,250,0,1250.0,USA,Online,PayPal
+736,1876,Enterprise,502,Monitor,Electronics,2026-03-08,2,300,0,600.0,Spain,Store,Credit Card
+737,1478,Enterprise,503,Keyboard,Accessories,2026-02-08,5,80,0,400.0,Italy,Partner,Cash
+738,1799,Private,506,Desk,Furniture,2026-05-22,5,450,0,2250.0,Israel,Marketplace,Cash
+739,1978,Small Business,506,Desk,Furniture,2026-04-02,1,450,0,450.0,Italy,Online,Cash
+740,1182,Enterprise,504,Mouse,Accessories,2026-09-09,10,40,5,380.0,USA,Store,Cash
+741,1108,Small Business,504,Mouse,Accessories,2026-05-13,10,40,15,340.0,USA,Online,Credit Card
+742,1256,Small Business,502,Monitor,Electronics,2026-01-10,10,300,15,2550.0,Italy,Store,Credit Card
+743,1155,Enterprise,501,Laptop,Electronics,2026-06-18,7,1200,0,8400.0,Spain,Online,Cash
+744,1864,Enterprise,508,Webcam,Accessories,2026-02-05,7,110,5,731.5,France,Online,Cash
+745,1548,Small Business,508,Webcam,Accessories,2026-06-20,2,110,10,198.0,United Kingdom,Marketplace,Credit Card
+746,1873,Small Business,502,Monitor,Electronics,2026-02-11,6,300,10,1620.0,Italy,Partner,PayPal
+747,1990,Small Business,503,Keyboard,Accessories,2026-12-05,9,80,0,720.0,France,Partner,Cash
+748,1086,Enterprise,502,Monitor,Electronics,2026-08-13,6,300,5,1710.0,France,Store,Credit Card
+749,1607,Private,504,Mouse,Accessories,2026-09-08,1,40,15,34.0,Spain,Online,Bank Transfer
+750,1989,Private,508,Webcam,Accessories,2026-01-19,9,110,5,940.5,Netherlands,Online,Bank Transfer
+751,1216,Enterprise,501,Laptop,Electronics,2026-12-08,7,1200,0,8400.0,Italy,Store,PayPal
+752,1144,Small Business,502,Monitor,Electronics,2026-12-01,1,300,15,255.0,Israel,Marketplace,Credit Card
+753,1176,Enterprise,504,Mouse,Accessories,2026-01-26,3,40,0,120.0,United Kingdom,Online,Cash
+754,1837,Private,503,Keyboard,Accessories,2026-02-28,10,80,0,800.0,Italy,Store,Credit Card
+755,1830,Enterprise,504,Mouse,Accessories,2026-12-14,7,40,0,280.0,Spain,Partner,Credit Card
+756,1782,Private,503,Keyboard,Accessories,2026-10-31,6,80,0,480.0,Germany,Partner,Credit Card
+757,1775,Small Business,502,Monitor,Electronics,2026-03-28,5,300,0,1500.0,Netherlands,Store,Cash
+758,1136,Private,504,Mouse,Accessories,2026-11-20,10,40,0,400.0,Spain,Store,Credit Card
+759,1007,Private,508,Webcam,Accessories,2026-02-15,2,110,0,220.0,United Kingdom,Marketplace,Cash
+760,1655,Small Business,503,Keyboard,Accessories,2026-09-25,4,80,0,320.0,Italy,Marketplace,PayPal
+761,1038,Enterprise,503,Keyboard,Accessories,2026-04-03,10,80,15,680.0,Italy,Online,Bank Transfer
+762,1571,Private,506,Desk,Furniture,2026-04-09,7,450,0,3150.0,USA,Online,Bank Transfer
+763,1675,Private,504,Mouse,Accessories,2026-05-22,8,40,15,272.0,Israel,Store,Credit Card
+764,1180,Private,503,Keyboard,Accessories,2026-12-10,8,80,5,608.0,Israel,Online,Bank Transfer
+765,1257,Small Business,505,Office Chair,Furniture,2026-11-12,4,250,5,950.0,Italy,Online,Credit Card
+766,1161,Private,501,Laptop,Electronics,2026-09-06,9,1200,0,10800.0,USA,Online,PayPal
+767,1333,Small Business,508,Webcam,Accessories,2026-04-12,10,110,10,990.0,Netherlands,Store,Credit Card
+768,1242,Enterprise,506,Desk,Furniture,2026-07-31,4,450,0,1800.0,France,Marketplace,PayPal
+769,1496,Private,502,Monitor,Electronics,2026-08-12,8,300,10,2160.0,Germany,Store,Cash
+770,1139,Small Business,503,Keyboard,Accessories,2026-04-10,7,80,0,560.0,Netherlands,Partner,PayPal
+771,1708,Enterprise,506,Desk,Furniture,2026-01-31,3,450,0,1350.0,United Kingdom,Store,Credit Card
+772,1175,Small Business,508,Webcam,Accessories,2026-04-23,8,110,5,836.0,United Kingdom,Store,PayPal
+773,1877,Enterprise,504,Mouse,Accessories,2026-09-08,2,40,5,76.0,France,Marketplace,Cash
+774,1438,Enterprise,505,Office Chair,Furniture,2026-05-07,1,250,15,212.5,France,Partner,Cash
+775,1935,Enterprise,504,Mouse,Accessories,2026-01-03,10,40,0,400.0,Spain,Online,Credit Card
+776,1435,Enterprise,508,Webcam,Accessories,2026-07-21,9,110,0,990.0,Italy,Online,Cash
+777,1571,Private,508,Webcam,Accessories,2026-12-21,4,110,0,440.0,Spain,Store,PayPal
+778,1663,Private,506,Desk,Furniture,2026-01-09,5,450,0,2250.0,Italy,Partner,PayPal
+779,1597,Private,508,Webcam,Accessories,2026-08-21,10,110,15,935.0,Italy,Store,Cash
+780,1475,Enterprise,503,Keyboard,Accessories,2026-11-21,6,80,15,408.0,Israel,Online,Cash
+781,1303,Small Business,506,Desk,Furniture,2026-05-19,9,450,0,4050.0,France,Online,Bank Transfer
+782,1372,Private,501,Laptop,Electronics,2026-02-26,9,1200,15,9180.0,Spain,Partner,Cash
+783,1179,Enterprise,501,Laptop,Electronics,2026-10-14,6,1200,0,7200.0,USA,Store,PayPal
+784,1116,Enterprise,506,Desk,Furniture,2026-09-02,4,450,10,1620.0,France,Store,Bank Transfer
+785,1696,Small Business,506,Desk,Furniture,2026-05-22,5,450,10,2025.0,Israel,Online,Bank Transfer
+786,1513,Enterprise,506,Desk,Furniture,2026-03-04,8,450,5,3420.0,Italy,Partner,Cash
+787,1913,Small Business,506,Desk,Furniture,2026-02-14,2,450,0,900.0,USA,Marketplace,PayPal
+788,1168,Small Business,505,Office Chair,Furniture,2026-02-27,2,250,0,500.0,Germany,Marketplace,PayPal
+789,1023,Small Business,504,Mouse,Accessories,2026-08-02,9,40,15,306.0,Germany,Marketplace,Bank Transfer
+790,1660,Private,507,Headphones,Audio,2026-05-30,8,150,15,1020.0,France,Online,Credit Card
+791,1343,Small Business,504,Mouse,Accessories,2026-10-24,9,40,15,306.0,Netherlands,Partner,Cash
+792,1580,Private,508,Webcam,Accessories,2026-06-06,8,110,0,880.0,Germany,Partner,PayPal
+793,1788,Private,508,Webcam,Accessories,2026-03-17,6,110,0,660.0,Netherlands,Partner,Cash
+794,1728,Enterprise,503,Keyboard,Accessories,2026-05-27,10,80,0,800.0,Germany,Store,PayPal
+795,1042,Small Business,503,Keyboard,Accessories,2026-10-22,4,80,0,320.0,Germany,Marketplace,Bank Transfer
+796,1575,Enterprise,506,Desk,Furniture,2026-01-18,3,450,0,1350.0,Netherlands,Partner,PayPal
+797,1998,Private,506,Desk,Furniture,2026-10-01,8,450,10,3240.0,United Kingdom,Online,Credit Card
+798,1970,Small Business,507,Headphones,Audio,2026-06-13,8,150,0,1200.0,Germany,Online,Bank Transfer
+799,1992,Enterprise,505,Office Chair,Furniture,2026-12-08,8,250,0,2000.0,Germany,Marketplace,Bank Transfer
+800,1142,Enterprise,502,Monitor,Electronics,2026-10-10,8,300,0,2400.0,USA,Partner,Credit Card
+801,1456,Small Business,507,Headphones,Audio,2026-02-17,10,150,0,1500.0,Netherlands,Online,PayPal
+802,1023,Private,504,Mouse,Accessories,2026-10-03,5,40,0,200.0,Italy,Online,Cash
+803,1617,Enterprise,504,Mouse,Accessories,2026-09-19,8,40,0,320.0,Israel,Partner,Cash
+804,1395,Small Business,503,Keyboard,Accessories,2026-01-07,7,80,0,560.0,United Kingdom,Partner,Bank Transfer
+805,1089,Private,505,Office Chair,Furniture,2026-08-16,8,250,10,1800.0,Spain,Marketplace,Bank Transfer
+806,1917,Small Business,503,Keyboard,Accessories,2026-03-13,7,80,15,476.0,USA,Store,PayPal
+807,1343,Private,505,Office Chair,Furniture,2026-10-30,8,250,10,1800.0,Spain,Online,Credit Card
+808,1179,Enterprise,507,Headphones,Audio,2026-08-25,5,150,5,712.5,Germany,Store,PayPal
+809,1502,Private,507,Headphones,Audio,2026-06-04,5,150,10,675.0,United Kingdom,Marketplace,Cash
+810,1157,Small Business,504,Mouse,Accessories,2026-06-03,1,40,0,40.0,Italy,Online,Bank Transfer
+811,1928,Enterprise,507,Headphones,Audio,2026-11-27,3,150,5,427.5,France,Online,Credit Card
+812,1613,Enterprise,505,Office Chair,Furniture,2026-07-05,8,250,0,2000.0,Italy,Marketplace,Bank Transfer
+813,1524,Enterprise,508,Webcam,Accessories,2026-10-22,2,110,0,220.0,Israel,Partner,PayPal
+814,1472,Enterprise,501,Laptop,Electronics,2026-03-11,3,1200,0,3600.0,Netherlands,Store,Credit Card
+815,1651,Small Business,505,Office Chair,Furniture,2026-01-25,6,250,5,1425.0,United Kingdom,Partner,Credit Card
+816,1613,Private,504,Mouse,Accessories,2026-10-06,3,40,0,120.0,Netherlands,Partner,Bank Transfer
+817,1547,Enterprise,505,Office Chair,Furniture,2026-06-30,6,250,0,1500.0,Germany,Online,PayPal
+818,1421,Small Business,505,Office Chair,Furniture,2026-03-25,6,250,5,1425.0,USA,Store,PayPal
+819,1628,Enterprise,504,Mouse,Accessories,2026-09-27,4,40,10,144.0,USA,Marketplace,Cash
+820,1945,Private,502,Monitor,Electronics,2026-09-03,2,300,0,600.0,Netherlands,Partner,Bank Transfer
+821,1535,Small Business,503,Keyboard,Accessories,2026-03-30,8,80,10,576.0,United Kingdom,Online,Credit Card
+822,1145,Enterprise,504,Mouse,Accessories,2026-04-27,3,40,15,102.0,United Kingdom,Store,PayPal
+823,1707,Private,503,Keyboard,Accessories,2026-02-09,2,80,5,152.0,Israel,Marketplace,Cash
+824,1033,Enterprise,501,Laptop,Electronics,2026-09-20,4,1200,0,4800.0,Israel,Marketplace,Credit Card
+825,1308,Enterprise,505,Office Chair,Furniture,2026-01-06,1,250,0,250.0,USA,Online,PayPal
+826,1359,Private,504,Mouse,Accessories,2026-02-16,3,40,15,102.0,Germany,Partner,Bank Transfer
+827,1799,Enterprise,506,Desk,Furniture,2026-11-10,3,450,10,1215.0,France,Online,Credit Card
+828,1732,Private,501,Laptop,Electronics,2026-05-25,9,1200,0,10800.0,Germany,Online,Credit Card
+829,1486,Small Business,504,Mouse,Accessories,2026-12-24,9,40,15,306.0,Germany,Marketplace,Credit Card
+830,1434,Private,503,Keyboard,Accessories,2026-09-21,6,80,5,456.0,France,Marketplace,Credit Card
+831,1112,Enterprise,506,Desk,Furniture,2026-03-11,2,450,5,855.0,Italy,Partner,Bank Transfer
+832,1505,Private,501,Laptop,Electronics,2026-07-17,2,1200,0,2400.0,United Kingdom,Marketplace,Bank Transfer
+833,1417,Small Business,508,Webcam,Accessories,2026-08-08,4,110,10,396.0,France,Online,Cash
+834,1690,Small Business,506,Desk,Furniture,2026-12-11,3,450,0,1350.0,USA,Marketplace,Cash
+835,1404,Small Business,502,Monitor,Electronics,2026-12-22,2,300,0,600.0,USA,Store,Credit Card
+836,1205,Enterprise,506,Desk,Furniture,2026-07-26,4,450,0,1800.0,USA,Store,Cash
+837,1784,Enterprise,508,Webcam,Accessories,2026-10-31,5,110,15,467.5,United Kingdom,Marketplace,Bank Transfer
+838,1496,Enterprise,508,Webcam,Accessories,2026-05-23,10,110,5,1045.0,Germany,Marketplace,Credit Card
+839,1509,Private,502,Monitor,Electronics,2026-11-18,5,300,5,1425.0,Germany,Online,Credit Card
+840,1694,Private,501,Laptop,Electronics,2026-04-02,2,1200,5,2280.0,Spain,Partner,PayPal
+841,1098,Private,505,Office Chair,Furniture,2026-12-05,10,250,10,2250.0,Italy,Marketplace,PayPal
+842,1516,Small Business,505,Office Chair,Furniture,2026-10-05,8,250,5,1900.0,Netherlands,Online,Credit Card
+843,1460,Small Business,507,Headphones,Audio,2026-07-12,2,150,5,285.0,Italy,Marketplace,Credit Card
+844,1675,Small Business,501,Laptop,Electronics,2026-12-28,3,1200,10,3240.0,Germany,Marketplace,Cash
+845,1398,Small Business,503,Keyboard,Accessories,2026-02-26,5,80,15,340.0,Italy,Marketplace,Cash
+846,1400,Small Business,503,Keyboard,Accessories,2026-09-11,9,80,0,720.0,Spain,Partner,Bank Transfer
+847,1604,Private,506,Desk,Furniture,2026-03-07,1,450,0,450.0,Netherlands,Partner,Credit Card
+848,1438,Small Business,506,Desk,Furniture,2026-07-02,7,450,0,3150.0,Spain,Partner,Credit Card
+849,1663,Small Business,504,Mouse,Accessories,2026-10-31,4,40,0,160.0,USA,Online,Bank Transfer
+850,1020,Enterprise,502,Monitor,Electronics,2026-06-16,6,300,0,1800.0,Israel,Marketplace,Cash
+851,1712,Small Business,507,Headphones,Audio,2026-10-29,5,150,0,750.0,Israel,Partner,Cash
+852,1100,Small Business,507,Headphones,Audio,2026-02-21,6,150,10,810.0,France,Partner,Cash
+853,1306,Small Business,506,Desk,Furniture,2026-08-12,3,450,10,1215.0,France,Marketplace,Credit Card
+854,1048,Small Business,504,Mouse,Accessories,2026-10-21,5,40,0,200.0,Spain,Store,Credit Card
+855,1279,Private,502,Monitor,Electronics,2026-10-18,10,300,0,3000.0,Italy,Marketplace,PayPal
+856,1843,Small Business,506,Desk,Furniture,2026-09-16,2,450,15,765.0,United Kingdom,Marketplace,Bank Transfer
+857,1257,Enterprise,504,Mouse,Accessories,2026-09-21,7,40,5,266.0,Italy,Store,Credit Card
+858,1218,Enterprise,503,Keyboard,Accessories,2026-08-28,10,80,5,760.0,United Kingdom,Marketplace,Credit Card
+859,1151,Private,504,Mouse,Accessories,2026-03-19,6,40,5,228.0,United Kingdom,Marketplace,Cash
+860,1208,Small Business,506,Desk,Furniture,2026-05-17,2,450,15,765.0,United Kingdom,Store,Bank Transfer
+861,1116,Private,504,Mouse,Accessories,2026-04-09,7,40,0,280.0,Israel,Store,Bank Transfer
+862,1446,Small Business,508,Webcam,Accessories,2026-11-28,8,110,10,792.0,Israel,Store,PayPal
+863,1264,Small Business,505,Office Chair,Furniture,2026-12-04,3,250,0,750.0,Germany,Online,Cash
+864,1321,Enterprise,501,Laptop,Electronics,2026-06-02,1,1200,0,1200.0,USA,Marketplace,Bank Transfer
+865,1862,Private,502,Monitor,Electronics,2026-05-01,7,300,15,1785.0,USA,Online,Bank Transfer
+866,1614,Private,508,Webcam,Accessories,2026-06-10,2,110,0,220.0,Netherlands,Marketplace,PayPal
+867,1109,Private,507,Headphones,Audio,2026-04-20,4,150,0,600.0,United Kingdom,Marketplace,Cash
+868,1502,Enterprise,505,Office Chair,Furniture,2026-07-11,10,250,0,2500.0,USA,Partner,Cash
+869,1900,Private,508,Webcam,Accessories,2026-07-05,4,110,0,440.0,Italy,Partner,Bank Transfer
+870,1861,Enterprise,501,Laptop,Electronics,2026-12-06,10,1200,0,12000.0,Israel,Store,Bank Transfer
+871,1981,Enterprise,507,Headphones,Audio,2026-07-05,5,150,15,637.5,USA,Store,Cash
+872,1949,Small Business,507,Headphones,Audio,2026-06-04,1,150,5,142.5,USA,Store,Bank Transfer
+873,1646,Small Business,504,Mouse,Accessories,2026-11-26,3,40,5,114.0,Spain,Online,Bank Transfer
+874,1754,Small Business,502,Monitor,Electronics,2026-06-20,8,300,5,2280.0,Spain,Online,PayPal
+875,1360,Small Business,505,Office Chair,Furniture,2026-11-05,9,250,0,2250.0,Netherlands,Marketplace,Credit Card
+876,1454,Enterprise,501,Laptop,Electronics,2026-03-11,3,1200,15,3060.0,Israel,Marketplace,PayPal
+877,1084,Private,505,Office Chair,Furniture,2026-03-22,6,250,10,1350.0,France,Store,Cash
+878,1894,Enterprise,506,Desk,Furniture,2026-03-10,8,450,5,3420.0,United Kingdom,Store,Bank Transfer
+879,1424,Small Business,505,Office Chair,Furniture,2026-04-04,4,250,0,1000.0,Spain,Marketplace,PayPal
+880,1662,Enterprise,501,Laptop,Electronics,2026-11-17,1,1200,10,1080.0,France,Online,Cash
+881,1872,Private,504,Mouse,Accessories,2026-01-26,5,40,15,170.0,Spain,Marketplace,Bank Transfer
+882,1174,Enterprise,503,Keyboard,Accessories,2026-03-02,2,80,0,160.0,Israel,Marketplace,Cash
+883,1730,Private,508,Webcam,Accessories,2026-04-08,2,110,0,220.0,United Kingdom,Partner,Cash
+884,1876,Private,507,Headphones,Audio,2026-11-04,3,150,5,427.5,France,Partner,PayPal
+885,1811,Private,507,Headphones,Audio,2026-01-15,3,150,5,427.5,United Kingdom,Partner,PayPal
+886,1596,Enterprise,508,Webcam,Accessories,2026-11-28,4,110,0,440.0,Italy,Online,Credit Card
+887,1997,Enterprise,508,Webcam,Accessories,2026-07-23,3,110,0,330.0,France,Marketplace,Cash
+888,1570,Private,505,Office Chair,Furniture,2026-01-27,2,250,0,500.0,Netherlands,Store,Cash
+889,1990,Enterprise,506,Desk,Furniture,2026-12-30,10,450,15,3825.0,Israel,Online,Bank Transfer
+890,1687,Small Business,507,Headphones,Audio,2026-03-09,5,150,5,712.5,Israel,Store,Bank Transfer
+891,1952,Small Business,503,Keyboard,Accessories,2026-08-28,9,80,5,684.0,Germany,Online,Bank Transfer
+892,1119,Small Business,507,Headphones,Audio,2026-01-23,3,150,0,450.0,Germany,Marketplace,Bank Transfer
+893,1924,Small Business,506,Desk,Furniture,2026-11-10,7,450,0,3150.0,United Kingdom,Partner,Cash
+894,1503,Private,503,Keyboard,Accessories,2026-10-12,6,80,15,408.0,Italy,Online,PayPal
+895,1187,Private,503,Keyboard,Accessories,2026-08-29,1,80,0,80.0,United Kingdom,Store,Cash
+896,1041,Small Business,507,Headphones,Audio,2026-07-02,2,150,5,285.0,Italy,Marketplace,Cash
+897,1357,Private,502,Monitor,Electronics,2026-04-15,3,300,0,900.0,United Kingdom,Store,PayPal
+898,1599,Private,505,Office Chair,Furniture,2026-10-26,10,250,15,2125.0,Israel,Store,Cash
+899,1693,Private,502,Monitor,Electronics,2026-06-18,4,300,5,1140.0,Israel,Partner,Credit Card
+900,1951,Private,507,Headphones,Audio,2026-06-15,6,150,10,810.0,Germany,Online,Credit Card
+901,1643,Small Business,508,Webcam,Accessories,2026-11-01,8,110,5,836.0,Israel,Partner,Credit Card
+902,1751,Enterprise,508,Webcam,Accessories,2026-03-08,6,110,15,561.0,France,Online,Bank Transfer
+903,1072,Enterprise,506,Desk,Furniture,2026-11-05,1,450,15,382.5,Spain,Online,Cash
+904,1988,Small Business,505,Office Chair,Furniture,2026-02-15,3,250,0,750.0,Israel,Store,PayPal
+905,1662,Enterprise,507,Headphones,Audio,2026-03-20,7,150,0,1050.0,USA,Partner,Cash
+906,1617,Private,507,Headphones,Audio,2026-07-03,5,150,15,637.5,USA,Partner,PayPal
+907,1487,Small Business,508,Webcam,Accessories,2026-10-16,8,110,5,836.0,Spain,Online,Cash
+908,1444,Enterprise,506,Desk,Furniture,2026-08-07,10,450,0,4500.0,USA,Online,Bank Transfer
+909,1702,Enterprise,508,Webcam,Accessories,2026-03-21,4,110,15,374.0,Italy,Online,Bank Transfer
+910,1928,Small Business,508,Webcam,Accessories,2026-06-03,7,110,0,770.0,Germany,Store,Bank Transfer
+911,1302,Enterprise,504,Mouse,Accessories,2026-01-25,9,40,5,342.0,USA,Online,Credit Card
+912,1475,Enterprise,507,Headphones,Audio,2026-10-19,7,150,0,1050.0,United Kingdom,Partner,Bank Transfer
+913,1116,Enterprise,502,Monitor,Electronics,2026-12-05,9,300,0,2700.0,Italy,Store,PayPal
+914,1426,Enterprise,507,Headphones,Audio,2026-06-02,1,150,0,150.0,Netherlands,Marketplace,Cash
+915,1216,Private,505,Office Chair,Furniture,2026-02-10,6,250,0,1500.0,United Kingdom,Online,Cash
+916,1119,Private,501,Laptop,Electronics,2026-03-29,1,1200,5,1140.0,Italy,Marketplace,Cash
+917,1832,Enterprise,508,Webcam,Accessories,2026-07-04,5,110,10,495.0,Spain,Partner,Credit Card
+918,1195,Private,503,Keyboard,Accessories,2026-01-09,3,80,0,240.0,France,Online,PayPal
+919,1247,Small Business,508,Webcam,Accessories,2026-11-17,3,110,15,280.5,France,Online,Bank Transfer
+920,1432,Private,508,Webcam,Accessories,2026-03-01,3,110,5,313.5,Germany,Store,Cash
+921,1880,Small Business,508,Webcam,Accessories,2026-10-27,8,110,0,880.0,France,Store,Bank Transfer
+922,1008,Private,507,Headphones,Audio,2026-11-19,1,150,0,150.0,Spain,Marketplace,Cash
+923,1409,Small Business,505,Office Chair,Furniture,2026-09-20,1,250,5,237.5,Italy,Store,Credit Card
+924,1323,Enterprise,501,Laptop,Electronics,2026-02-02,7,1200,10,7560.0,United Kingdom,Marketplace,Cash
+925,1961,Enterprise,502,Monitor,Electronics,2026-06-27,8,300,10,2160.0,Italy,Marketplace,Credit Card
+926,1196,Small Business,503,Keyboard,Accessories,2026-06-26,5,80,15,340.0,Italy,Store,PayPal
+927,1672,Small Business,506,Desk,Furniture,2026-03-09,10,450,15,3825.0,United Kingdom,Marketplace,Cash
+928,1636,Private,506,Desk,Furniture,2026-05-25,8,450,0,3600.0,USA,Marketplace,PayPal
+929,1620,Small Business,503,Keyboard,Accessories,2026-02-21,4,80,0,320.0,Spain,Marketplace,Bank Transfer
+930,1048,Private,504,Mouse,Accessories,2026-07-03,4,40,10,144.0,United Kingdom,Partner,PayPal
+931,1826,Private,503,Keyboard,Accessories,2026-06-22,9,80,0,720.0,Spain,Online,PayPal
+932,1498,Small Business,502,Monitor,Electronics,2026-06-24,9,300,0,2700.0,Netherlands,Online,Bank Transfer
+933,1685,Private,503,Keyboard,Accessories,2026-12-28,9,80,10,648.0,Israel,Marketplace,Cash
+934,1624,Private,502,Monitor,Electronics,2026-10-15,2,300,10,540.0,Israel,Online,PayPal
+935,1160,Enterprise,502,Monitor,Electronics,2026-05-30,4,300,0,1200.0,Italy,Marketplace,Credit Card
+936,1838,Private,503,Keyboard,Accessories,2026-03-04,6,80,0,480.0,France,Marketplace,Cash
+937,1349,Small Business,501,Laptop,Electronics,2026-09-16,4,1200,5,4560.0,Germany,Online,Bank Transfer
+938,1644,Enterprise,506,Desk,Furniture,2026-05-06,7,450,0,3150.0,Germany,Marketplace,PayPal
+939,1940,Small Business,503,Keyboard,Accessories,2026-08-23,7,80,5,532.0,Netherlands,Online,Cash
+940,1825,Enterprise,503,Keyboard,Accessories,2026-02-05,1,80,15,68.0,USA,Partner,Bank Transfer
+941,1062,Small Business,507,Headphones,Audio,2026-01-19,3,150,5,427.5,Germany,Online,Bank Transfer
+942,1717,Enterprise,507,Headphones,Audio,2026-06-05,7,150,15,892.5,Netherlands,Partner,Credit Card
+943,1942,Private,505,Office Chair,Furniture,2026-12-25,9,250,10,2025.0,Spain,Marketplace,PayPal
+944,1414,Private,508,Webcam,Accessories,2026-06-04,6,110,15,561.0,USA,Online,Bank Transfer
+945,1553,Small Business,507,Headphones,Audio,2026-04-20,3,150,10,405.0,USA,Partner,Bank Transfer
+946,1911,Enterprise,503,Keyboard,Accessories,2026-10-31,1,80,0,80.0,United Kingdom,Store,Bank Transfer
+947,1749,Private,507,Headphones,Audio,2026-07-10,9,150,0,1350.0,United Kingdom,Partner,Credit Card
+948,1305,Enterprise,501,Laptop,Electronics,2026-01-03,2,1200,5,2280.0,Italy,Partner,PayPal
+949,1291,Enterprise,504,Mouse,Accessories,2026-10-21,6,40,0,240.0,Germany,Marketplace,PayPal
+950,1596,Private,502,Monitor,Electronics,2026-07-04,6,300,10,1620.0,Italy,Online,PayPal
+951,1094,Private,507,Headphones,Audio,2026-08-06,7,150,0,1050.0,Germany,Marketplace,PayPal
+952,1693,Enterprise,508,Webcam,Accessories,2026-07-26,2,110,0,220.0,Spain,Partner,Cash
+953,1953,Small Business,507,Headphones,Audio,2026-08-02,8,150,15,1020.0,Germany,Store,PayPal
+954,1991,Enterprise,508,Webcam,Accessories,2026-09-20,8,110,0,880.0,USA,Store,Cash
+955,1160,Enterprise,508,Webcam,Accessories,2026-07-09,1,110,15,93.5,USA,Marketplace,Credit Card
+956,1296,Private,502,Monitor,Electronics,2026-09-25,6,300,10,1620.0,Germany,Online,Bank Transfer
+957,1301,Small Business,505,Office Chair,Furniture,2026-01-15,6,250,0,1500.0,Germany,Store,Cash
+958,1220,Private,501,Laptop,Electronics,2026-09-08,5,1200,0,6000.0,Israel,Online,Bank Transfer
+959,1492,Enterprise,502,Monitor,Electronics,2026-06-08,1,300,5,285.0,Italy,Partner,Cash
+960,1780,Private,508,Webcam,Accessories,2026-09-16,10,110,0,1100.0,Italy,Marketplace,Cash
+961,1819,Enterprise,503,Keyboard,Accessories,2026-12-07,6,80,0,480.0,Spain,Marketplace,PayPal
+962,1046,Enterprise,507,Headphones,Audio,2026-08-15,6,150,10,810.0,United Kingdom,Online,PayPal
+963,1815,Enterprise,501,Laptop,Electronics,2026-06-08,10,1200,15,10200.0,USA,Online,PayPal
+964,1193,Small Business,501,Laptop,Electronics,2026-09-15,10,1200,10,10800.0,Israel,Online,PayPal
+965,1251,Enterprise,501,Laptop,Electronics,2026-10-24,5,1200,0,6000.0,Italy,Online,Bank Transfer
+966,1503,Private,507,Headphones,Audio,2026-06-24,10,150,0,1500.0,Spain,Store,Cash
+967,1391,Small Business,501,Laptop,Electronics,2026-02-16,9,1200,0,10800.0,USA,Online,PayPal
+968,1261,Private,505,Office Chair,Furniture,2026-03-20,3,250,0,750.0,United Kingdom,Marketplace,PayPal
+969,1185,Private,501,Laptop,Electronics,2026-01-30,10,1200,0,12000.0,United Kingdom,Marketplace,Credit Card
+970,1914,Small Business,506,Desk,Furniture,2026-05-13,3,450,5,1282.5,Spain,Online,Credit Card
+971,1600,Private,504,Mouse,Accessories,2026-09-10,4,40,10,144.0,Spain,Online,Bank Transfer
+972,1566,Small Business,501,Laptop,Electronics,2026-02-03,6,1200,5,6840.0,Italy,Online,Cash
+973,1567,Enterprise,504,Mouse,Accessories,2026-12-12,1,40,0,40.0,USA,Store,PayPal
+974,1456,Private,505,Office Chair,Furniture,2026-11-22,10,250,5,2375.0,France,Store,Bank Transfer
+975,1975,Small Business,503,Keyboard,Accessories,2026-10-12,4,80,10,288.0,Italy,Online,Credit Card
+976,1668,Private,508,Webcam,Accessories,2026-01-01,10,110,0,1100.0,Israel,Marketplace,Bank Transfer
+977,1862,Enterprise,505,Office Chair,Furniture,2026-04-19,7,250,0,1750.0,United Kingdom,Online,PayPal
+978,1404,Enterprise,502,Monitor,Electronics,2026-03-04,5,300,0,1500.0,Germany,Partner,Cash
+979,1980,Small Business,504,Mouse,Accessories,2026-12-16,10,40,10,360.0,Netherlands,Partner,Cash
+980,1329,Small Business,505,Office Chair,Furniture,2026-04-18,4,250,15,850.0,Italy,Partner,Credit Card
+981,1487,Private,503,Keyboard,Accessories,2026-01-05,1,80,10,72.0,Germany,Marketplace,Cash
+982,1806,Enterprise,507,Headphones,Audio,2026-11-30,9,150,0,1350.0,USA,Online,Cash
+983,1847,Enterprise,502,Monitor,Electronics,2026-07-03,6,300,5,1710.0,Spain,Store,Credit Card
+984,1958,Private,502,Monitor,Electronics,2026-08-16,8,300,0,2400.0,Israel,Store,Credit Card
+985,1092,Enterprise,505,Office Chair,Furniture,2026-11-17,6,250,0,1500.0,United Kingdom,Store,PayPal
+986,1287,Small Business,508,Webcam,Accessories,2026-12-27,6,110,0,660.0,France,Online,PayPal
+987,1582,Enterprise,507,Headphones,Audio,2026-09-10,2,150,0,300.0,Germany,Store,PayPal
+988,1763,Private,502,Monitor,Electronics,2026-03-07,10,300,0,3000.0,United Kingdom,Store,Bank Transfer
+989,1694,Enterprise,504,Mouse,Accessories,2026-11-11,1,40,15,34.0,United Kingdom,Marketplace,Credit Card
+990,1442,Small Business,507,Headphones,Audio,2026-05-21,1,150,0,150.0,USA,Marketplace,Cash
+991,1905,Enterprise,506,Desk,Furniture,2026-04-25,9,450,0,4050.0,Israel,Partner,Cash
+992,1401,Private,508,Webcam,Accessories,2026-06-21,6,110,0,660.0,USA,Online,PayPal
+993,1201,Private,507,Headphones,Audio,2026-06-18,2,150,0,300.0,United Kingdom,Online,Credit Card
+994,1827,Private,501,Laptop,Electronics,2026-10-31,8,1200,5,9120.0,Netherlands,Partner,PayPal
+995,1981,Small Business,502,Monitor,Electronics,2026-01-28,8,300,0,2400.0,Netherlands,Store,Credit Card
+996,1457,Enterprise,508,Webcam,Accessories,2026-03-05,2,110,15,187.0,USA,Online,Credit Card
+997,1066,Private,507,Headphones,Audio,2026-02-01,6,150,15,765.0,Italy,Online,Bank Transfer
+998,1693,Private,507,Headphones,Audio,2026-10-14,2,150,0,300.0,Israel,Partner,Cash
+999,1770,Small Business,507,Headphones,Audio,2026-04-30,2,150,10,270.0,Israel,Marketplace,Cash
+1000,1634,Private,508,Webcam,Accessories,2026-06-23,7,110,10,693.0,Israel,Marketplace,Bank Transfer
