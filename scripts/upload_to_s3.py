@@ -130,8 +130,7 @@ def main() -> None:
     configure_aws_environment(
         aws_config_dir=args.aws_config_dir,
         profile=args.profile,
-        region=args.region,
-    )
+        regio
 
     session = create_boto3_session(
         profile=args.profile,
